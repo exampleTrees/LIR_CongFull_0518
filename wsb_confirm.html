@@ -1,0 +1,843 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+            <title>Zach’s Weekly Squawk Box</title>
+</head><body>
+<style type="text/css">
+    .warning-message {
+        position: fixed;
+        top: 0px;
+        left: 10px;
+        margin: 0px;
+        height: 100%;
+        width: 100%;
+        background-color: #ffffff;
+    }
+</style>
+<div id="warning-message" class="warning-message">
+  <noscript>
+    
+<h1>JavaScript must be enabled to complete this purchase. </h1>
+<p>Dear Reader, </p>
+<p>JavaScript must be enabled in order to use this site. </p>
+<p>If you know how to enable JavaScript in your browser, please do so now. </p>
+<p><strong>Please call now, and we can help you right away: 1-888-295-0140</strong>. </p>
+<p>Thank you. </p>  </noscript>
+  <div id="no-cookie" style="display:none">
+
+<h1>Cookies must be enabled to complete this purchase. </h1>
+<p>Dear Reader, </p>
+<p>Cookies must be enabled in order to use this site. </p>
+<p>If you know how to enable Cookies in your browser, please do so now. </p>
+<p>The Help portion of the toolbar on most browsers will tell you how to set your browser to enable cookies. </p>
+<p><strong>Please call now, and we can help you right away: 1-888-295-0140</strong>. </p>
+<p>Thank you. </p>  </div>
+</div>
+<div id='mainContainer' class='container'>
+<!-- dependent name: trackerVars -->
+
+<style type="text/css">
+a:hover {
+color: #5E8BC6 !important;
+}
+a:active {
+color: #5E8BC6 !important;
+}
+a:visited {
+color: #5E8BC6 !important;
+}
+h1 a:active {
+color: #5E8BC6 !important;
+}
+h2 a:active {
+color: #5E8BC6 !important;
+}
+h3 a:active {
+color: #5E8BC6 !important;
+}
+h4 a:active {
+color: #5E8BC6 !important;
+}
+h5 a:active {
+color: #5E8BC6 !important;
+}
+h6 a:active {
+color: #5E8BC6 !important;
+}
+h1 a:visited {
+color: #5E8BC6 !important;
+}
+h2 a:visited {
+color: #5E8BC6 !important;
+}
+h3 a:visited {
+color: #5E8BC6 !important;
+}
+h4 a:visited {
+color: #5E8BC6 !important;
+}
+h5 a:visited {
+color: #5E8BC6 !important;
+}
+h6 a:visited {
+color: #5E8BC6 !important;
+}
+table.button:hover td {
+background: #2795b6 !important;
+}
+table.button:visited td {
+background: #2795b6 !important;
+}
+table.button:active td {
+background: #2795b6 !important;
+}
+table.button:hover td a {
+color: #fff !important;
+}
+table.button:visited td a {
+color: #fff !important;
+}
+table.button:active td a {
+color: #fff !important;
+}
+table.button:hover td {
+background: #2795b6 !important;
+}
+table.tiny-button:hover td {
+background: #2795b6 !important;
+}
+table.small-button:hover td {
+background: #2795b6 !important;
+}
+table.medium-button:hover td {
+background: #2795b6 !important;
+}
+table.large-button:hover td {
+background: #2795b6 !important;
+}
+table.button:hover td a {
+color: #ffffff !important;
+}
+table.button:active td a {
+color: #ffffff !important;
+}
+table.button td a:visited {
+color: #ffffff !important;
+}
+table.tiny-button:hover td a {
+color: #ffffff !important;
+}
+table.tiny-button:active td a {
+color: #ffffff !important;
+}
+table.tiny-button td a:visited {
+color: #ffffff !important;
+}
+table.small-button:hover td a {
+color: #ffffff !important;
+}
+table.small-button:active td a {
+color: #ffffff !important;
+}
+table.small-button td a:visited {
+color: #ffffff !important;
+}
+table.medium-button:hover td a {
+color: #ffffff !important;
+}
+table.medium-button:active td a {
+color: #ffffff !important;
+}
+table.medium-button td a:visited {
+color: #ffffff !important;
+}
+table.large-button:hover td a {
+color: #ffffff !important;
+}
+table.large-button:active td a {
+color: #ffffff !important;
+}
+table.large-button td a:visited {
+color: #ffffff !important;
+}
+table.secondary:hover td {
+background: #d0d0d0 !important; color: #555;
+}
+table.secondary:hover td a {
+color: #555 !important;
+}
+table.secondary td a:visited {
+color: #555 !important;
+}
+table.secondary:active td a {
+color: #555 !important;
+}
+table.success:hover td {
+background: #187215 !important;
+}
+table.alert:hover td {
+background: #970b0e !important;
+}
+table.customer-info tr td a.button:hover {
+background: #187215; color: #ffffff !important;
+}
+table.dr-btns:hover td {
+background: #970b0e !important;
+}
+table.dr-btns a:hover {
+color: #FFFFFF !important;
+}
+table.dr-btns a:active {
+color: #FFFFFF !important;
+}
+table.dr-btns a:visited {
+color: #FFFFFF !important;
+}
+@media only screen and (max-width: 360px) {
+  .pullquote {
+    width: 100% !important;
+  }
+  h1 {
+    font-size: 30px !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  table[class="body"] img {
+    width: auto !important; height: auto !important;
+  }
+  table[class="body"] center {
+    min-width: 0 !important;
+  }
+  table[class="body"] .container {
+    width: 95% !important;
+  }
+  table[class="body"] .rowz {
+    width: 100% !important; display: block !important;
+  }
+  table[class="body"] .wrapper {
+    display: block !important; padding-right: 0 !important;
+  }
+  table[class="body"] .columns {
+    table-layout: fixed !important; float: none !important; width: 100% !important; padding-right: 0px !important; padding-left: 0px !important; display: block !important;
+  }
+  table[class="body"] .column {
+    table-layout: fixed !important; float: none !important; width: 100% !important; padding-right: 0px !important; padding-left: 0px !important; display: block !important;
+  }
+  table[class="body"] .wrapper.first .columns {
+    display: table !important;
+  }
+  table[class="body"] .wrapper.first .column {
+    display: table !important;
+  }
+  table[class="body"] table.columns td {
+    width: 100% !important;
+  }
+  table[class="body"] table.column td {
+    width: 100% !important;
+  }
+  table[class="body"] .columns td.one {
+    width: 8.333333% !important;
+  }
+  table[class="body"] .column td.one {
+    width: 8.333333% !important;
+  }
+  table[class="body"] .columns td.two {
+    width: 16.666666% !important;
+  }
+  table[class="body"] .column td.two {
+    width: 16.666666% !important;
+  }
+  table[class="body"] .columns td.three {
+    width: 25% !important;
+  }
+  table[class="body"] .column td.three {
+    width: 25% !important;
+  }
+  table[class="body"] .columns td.four {
+    width: 33.333333% !important;
+  }
+  table[class="body"] .column td.four {
+    width: 33.333333% !important;
+  }
+  table[class="body"] .columns td.five {
+    width: 41.666666% !important;
+  }
+  table[class="body"] .column td.five {
+    width: 41.666666% !important;
+  }
+  table[class="body"] .columns td.six {
+    width: 50% !important;
+  }
+  table[class="body"] .column td.six {
+    width: 50% !important;
+  }
+  table[class="body"] .columns td.seven {
+    width: 58.333333% !important;
+  }
+  table[class="body"] .column td.seven {
+    width: 58.333333% !important;
+  }
+  table[class="body"] .columns td.eight {
+    width: 66.666666% !important;
+  }
+  table[class="body"] .column td.eight {
+    width: 66.666666% !important;
+  }
+  table[class="body"] .columns td.nine {
+    width: 75% !important;
+  }
+  table[class="body"] .column td.nine {
+    width: 75% !important;
+  }
+  table[class="body"] .columns td.ten {
+    width: 83.333333% !important;
+  }
+  table[class="body"] .column td.ten {
+    width: 83.333333% !important;
+  }
+  table[class="body"] .columns td.eleven {
+    width: 91.666666% !important;
+  }
+  table[class="body"] .column td.eleven {
+    width: 91.666666% !important;
+  }
+  table[class="body"] .columns td.twelve {
+    width: 100% !important;
+  }
+  table[class="body"] .column td.twelve {
+    width: 100% !important;
+  }
+  table[class="body"] td.offset-by-one {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-two {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-three {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-four {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-five {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-six {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-seven {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-eight {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-nine {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-ten {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-eleven {
+    padding-left: 0 !important;
+  }
+  table[class="body"] table.columns td.expander {
+    width: 1px !important;
+  }
+  table[class="body"] .right-text-pad {
+    padding-left: 10px !important;
+  }
+  table[class="body"] .text-pad-right {
+    padding-left: 10px !important;
+  }
+  table[class="body"] .left-text-pad {
+    padding-right: 10px !important;
+  }
+  table[class="body"] .text-pad-left {
+    padding-right: 10px !important;
+  }
+  table[class="body"] .hide-for-small {
+    display: none !important;
+  }
+  table[class="body"] .show-for-desktop {
+    display: none !important;
+  }
+  table[class="body"] .show-for-small {
+    display: inherit !important;
+  }
+  table[class="body"] .hide-for-desktop {
+    display: inherit !important;
+  }
+  table[class="body"] td {
+    word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important;
+  }
+  table.sub-info tr td.left {
+    width: 15% !important;
+  }
+  table[class="body"] table.columns table.customer-info tr td {
+    width: 33.33333% !important;
+  }
+  table[class="body"] table.columns table.customer-info tr td.descript {
+    width: 0% !important; display: none;
+  }
+  table[class="body"] table.columns table.customer-info tr td.name {
+    border-right: 1px solid #e1e1e1;
+  }
+}
+</style>
+  <table class="body" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; height: 100%; width: 100%; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 24px; font-size: 16px; background: #222222; margin: 0; padding: 0;" bgcolor="#222222"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="center" align="center" valign="top" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: center; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 24px; font-size: 16px; margin: 0; padding: 0;">
+        <center style="width: 100%; min-width: 580px;">
+          <span class="hiddenlead" style="color: #333333; font-family: Helvetica Neue, Helvetica, sans; font-size: 8px; text-align: center; visibility: hidden;">Congratulations…</span>
+
+          <!-- Email Content -->
+          <table class="container af-main-wrapper" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: inherit; width: 580px; background: #ffffff; margin: 0 auto; padding: 0; border: 1px solid #333333;" bgcolor="#ffffff"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 24px; font-size: 16px; margin: 0; padding: 0;" align="left" valign="top">
+
+                <!--Masthead-->
+                <table class="rowz masthead" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; padding: 0px;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="last wrapper no-padding" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 24px; font-size: 16px; margin: 0; padding: 0;" align="left" valign="top">
+                      <table class="full-width" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 24px; font-size: 16px; margin: 0; padding: 0;" align="left" valign="top">
+                            <img src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/assets/Masthead_WSB.jpg" width="580" height="135" class="masthead-image" alt="Weekly Squawk Box" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: 100%; max-width: 100%; float: left; clear: both; display: block;" align="left" /></td>
+                          <td class="expander" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 24px; font-size: 16px; margin: 0; padding: 0;" align="left" valign="top"></td>
+                        </tr></table></td>
+                  </tr></table><!--END Masthead--><!--Main Content--><table class="rowz" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; padding: 0px;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="wrapper last" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 24px; font-size: 16px; margin: 0; padding: 20px 0px 0px;" align="left" valign="top">
+                      <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="text-pad" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 24px; font-size: 16px; margin: 0; padding: 0px 20px 10px;" align="left" valign="top">
+                            <!--INTRO-->
+                            <p class="headline" style="font-size: 30px; line-height: 36px; font-family: 'Helvetica', 'Arial', sans-serif; padding-top: 10px; color: #222222; font-weight: bold; margin: 0 0 24px;">Welcome to Zach’s Weekly Squawk Box</p>
+
+                            <p style="font-size: 16px; line-height: 24px; font-family: 'Helvetica', 'Arial', sans-serif; margin: 0 0 24px;">Thanks for joining my <em>Weekly Squawk Box</em> service. It’s your window into my most intimate thoughts on where the markets are heading — and my top recommendations for playing what I see ahead.
+                              <br /><br /> 
+                              It’s timely advice that could prove immensely profitable… just like the “squawk box” calls I listened to when I was managing multimillion-dollar accounts for a hedge fund firm.  
+                              <br /><br />
+                              Using your personal squawk box, you can listen in as I share information that will give you a big advantage for investing <strong>your</strong> money. <br /><br />
+                              If you’re a regular reader of my <em>Lifetime Income Report, Income on Demand, Contract Income Alert</em> or any of my other services, you already know the kind of high-caliber analysis you can expect. You may also know my personal philosophy, based on something my boss at the hedge fund company once told me. 
+                              <br /><br /> 
+
+He said, “Zach, our clients don’t care if we shoot the lights out. But they absolutely require us to protect the money that they have trusted us with.”
+<br /><br />
+That principle has never left me… which is why it’s at the core of every service I oversee, including <em>Weekly Squawk Box</em>.
+<br /><br />
+But <em>Weekly Squawk Box</em> is unlike anything I’ve ever offered before. I’ll be sharing my research and off-the-cuff insights into the markets as well as specific recommendations to cash in on my analysis.
+<br /><br />
+We’ll start each Monday with a rundown of what’s going on and what’s happening in the portfolio. 
+<br /><br />
+On Wednesdays, we’ll take a deeper dive into what’s happening on Wall Street. I’ll explain any trends I’m seeing and discuss any insights from my trading desk feed. This is also when I’ll tell you what to buy and at what price.
+<br /><br />
+Even more importantly, it will be an interactive experience.
+<br /><br /> 
+With my <em>Weekly Squawk Box</em>, you’ll be able to ask me questions live and in person. Get my latest thoughts on news that could affect markets… specific stocks that we’re watching… or other opportunities that we’ll be covering week after week. (Just remember that I can’t give you personalized investment advice.)
+<br /><br />
+It should be very exciting, and I’m glad to have you on board!
+
+                              
+                            </p>
+    <p class="subhead" style="font-size: 24px; line-height: 30px; font-family: 'Helvetica', 'Arial', sans-serif; padding-top: 0px; padding-bottom: 12px; color: #222222; font-weight: bold; margin: 0 0 12px;">Your Reports</p>
+
+                            <p style="font-size: 16px; line-height: 24px; font-family: 'Helvetica', 'Arial', sans-serif; margin: 0 0 24px;">If you are to receive these by mail, they will be delivered in 10 to 14 days. For immediate access click on report below.</p>
+                            
+                        <table class="customer-info" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; margin-bottom: 20px; padding: 0; border: 1px solid #e1e1e1;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="left" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: middle !important; text-align: left; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 16px; border-bottom-width: 1px; border-bottom-color: #e1e1e1; border-bottom-style: solid; width: 60% !important; margin: 0; padding: 10px;" align="left" valign="middle !important">
+                                  <strong>The Income Box Investing Handbook</strong>
+                                </td>
+                                <td class="right" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: middle !important; text-align: right; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 16px; border-bottom-width: 1px; border-bottom-color: #e1e1e1; border-bottom-style: solid; margin: 0; padding: 10px;" align="right" valign="middle !important">
+                                  <a href="https://s3.amazonaws.com/agorafinancialwebsite/wp-content/uploads/2018/03/WSB_IncomeBoxInvesting.pdf" style="color: #5E8BC6; text-decoration: underline;">View Now</a>
+                                </td>
+                              
+                              </tr>
+                              <tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="left" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: middle !important; text-align: left; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 16px; border-bottom-width: 1px; border-bottom-color: #e1e1e1; border-bottom-style: solid; width: 60% !important; margin: 0; padding: 10px;" align="left" valign="middle !important">
+                                  <strong>How to Make $16,209 From Your First Income Box Trade</strong>
+                                </td>
+                                <td class="right" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: middle !important; text-align: right; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 16px; border-bottom-width: 1px; border-bottom-color: #e1e1e1; border-bottom-style: solid; margin: 0; padding: 10px;" align="right" valign="middle !important">
+                                  <a href="https://s3.amazonaws.com/agorafinancialwebsite/wp-content/uploads/2018/03/WSB_HowToMake.pdf" style="color: #5E8BC6; text-decoration: underline;">View Now</a>
+                                </td>
+                              
+                              </tr>
+                  
+                          
+
+                            
+
+                            </table>
+      <div class="order_confirm">
+
+
+    <input name="urlQueryString" id="urlQueryString" type="hidden" value="" />
+
+          <h3>Order Information</h3>
+
+          <p><span class="order_detail">First Name:</span>
+            John
+          </p>
+          <p><span class="order_detail">Last Name:</span>
+            Doe
+          </p>
+          <p><span class="order_detail">Address 1:</span>
+            123 Main St
+          </p>
+            <p><span class="order_detail">Address 2:</span>
+              Apt A
+            </p>
+          <p><span class="order_detail">Country:</span>
+            UNITED STATES
+          </p>
+          <p><span class="order_detail">Zip/Postal Code:</span>
+            12345
+          </p>
+            <p><span class="order_detail">State:</span>
+              ARMED FORCES
+            </p>
+          <p><span class="order_detail">City:</span>
+            argentinianTaxDNI
+          </p>
+            <p><span class="order_detail">Phone:</span>
+              555-555-5555
+            </p>
+          <div class="hidethis">
+              Fax:
+              555-555-5555
+          </div>
+          <p><span class="order_detail">Email: </span>
+            john@doe.com
+          </p>
+
+
+
+
+
+
+    <form name="postSelectionPaymentOptionForm" method="post" action="/opium/preview">
+            <div class="hidethis">
+              
+              Payment Option
+              Secure Credit Card Online
+            </div>
+
+            <h3>Credit Card Information</h3>
+            <p><span class="order_detail">
+American Express: </span>
+              XXXXXXXX1111
+            </p>
+
+            <div class="hidethis">
+    </form>
+        </div>
+
+        <p><span class="order_detail">Order Number: </span>
+          12345678l
+        </p>
+        <p><span class="order_detail">Promotion Code: </span>
+          ELIRU5N7
+        </p>
+
+        <h3>Your Order</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+        <div class="autorenewright">
+
+        </div>
+
+        <h3>Subtotal: USD $ 0.00</h3>
+      </div>
+                            
+
+                             
+                            <p style="font-size: 16px; line-height: 24px; font-family: 'Helvetica', 'Arial', sans-serif; margin: 0 0 24px;"> </p>
+                            <p class="subhead" style="font-size: 24px; line-height: 30px; font-family: 'Helvetica', 'Arial', sans-serif; padding-top: 0px; padding-bottom: 12px; color: #222222; font-weight: bold; margin: 0 0 12px;">What Will My Statement Look Like?</p>
+                            <p style="font-size: 16px; line-height: 24px; font-family: 'Helvetica', 'Arial', sans-serif; margin: 0 0 24px;">Below is an example of what you will see on your credit card statement for this charge and any future charges from this publication.</p>
+                            <p style="font-size: 16px; line-height: 24px; font-family: 'Helvetica', 'Arial', sans-serif; margin: 0 0 24px;">
+                              In an effort to better serve our customers, we utilize credit and debit card preauthorization.  Occasionally, you will see an additional PENDING charge(s) on your statement until our merchant clears the transaction.  There is no need to contact us, as the pending authorization hold(s) will be <strong>automatically</strong> removed from your account within 3-5 days
+                            </p>
+                            <p class="centered" style="font-size: 16px; line-height: 24px; font-family: 'Helvetica', 'Arial', sans-serif; text-align: center; margin: 0 0 24px;" align="center"><img src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/assets/WSB_CCStatement.jpg" width="540" height="367" class="centered" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: none; clear: both; display: block; margin: 0 auto;" align="none" /></p>
+
+                            <!--CLOSER-->
+                            <p style="font-size: 16px; line-height: 24px; font-family: 'Helvetica', 'Arial', sans-serif; margin: 0 0 24px;"> </p>
+                            <p class="subhead" style="font-size: 24px; line-height: 30px; font-family: 'Helvetica', 'Arial', sans-serif; padding-top: 0px; padding-bottom: 12px; color: #222222; font-weight: bold; margin: 0 0 12px;">Watch Your Inbox</p>
+
+                            <p style="font-size: 16px; line-height: 24px; font-family: 'Helvetica', 'Arial', sans-serif; margin: 0 0 24px;"><strong>Our next <em>Squawk Box</em> call goes live on Wednesday at 10:30 AM EDT!  </strong>
+
+                              <br /><br />
+                              Here's to growing your income,
+                              <br /><br />
+                              <img src="https://d13p2xj50zkyqm.cloudfront.net/promos/images/signatures/ZacharyScheidt.png" alt="Zack Scheidt" />
+                              <br /><br />
+                              Zach Scheidt
+<br /><br />
+Editor, <em>Zach’s Weekly Squawk Box</em>
+                            </p>
+                            </td>
+                            <td class="expander" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 24px; font-size: 16px; margin: 0; padding: 0;" align="left" valign="top"></td>
+                          </tr></table></td>
+                    </tr></table><!--END Main Content--><!--Footer Links--><table class="rowz footer-btns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; background: #0f4767; padding: 0px;" bgcolor="#0f4767"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="wrapper" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 24px; font-size: 16px; margin: 0; padding: 20px 20px 0px 0px;" align="left" valign="top">
+                        <table class="four columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 180px; margin: 0 auto; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="text-pad" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 24px; font-size: 16px; margin: 0; padding: 10px 20px;" align="left" valign="top">
+
+                              <table class="tiny-button radius" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; overflow: hidden; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: center; color: #ffffff; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 12px; font-size: 16px; display: block; width: auto !important; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; background: #2580b5; margin: 0; padding: 10px;" align="center" bgcolor="#2580b5" valign="top">
+                                    <a href="https://agorafinancial.com/pub/wsb/type/whats-new/" style="color: #ffffff; text-decoration: none; font-weight: normal; font-family: Helvetica, Arial, sans-serif; font-size: 12px;">View The Latest Content</a>
+                                  </td>
+                                </tr></table></td>
+                            <td class="expander" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 24px; font-size: 16px; margin: 0; padding: 0;" align="left" valign="top"></td>
+                          </tr></table></td>
+                      <td class="wrapper" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 24px; font-size: 16px; margin: 0; padding: 20px 20px 0px 0px;" align="left" valign="top">
+                        <table class="four columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 180px; margin: 0 auto; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="text-pad" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 24px; font-size: 16px; margin: 0; padding: 10px 20px;" align="left" valign="top">
+
+                              <table class="tiny-button radius" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; overflow: hidden; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: center; color: #ffffff; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 12px; font-size: 16px; display: block; width: auto !important; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; background: #2580b5; margin: 0; padding: 10px;" align="center" bgcolor="#2580b5" valign="top">
+                                    <a href="https://myaccount.agorafinancial.com" style="color: #ffffff; text-decoration: none; font-weight: normal; font-family: Helvetica, Arial, sans-serif; font-size: 12px;">View My Account Information</a>
+                                  </td>
+                                </tr></table></td>
+                            <td class="expander" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 24px; font-size: 16px; margin: 0; padding: 0;" align="left" valign="top"></td>
+                          </tr></table></td>
+                      <td class="wrapper last" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 24px; font-size: 16px; margin: 0; padding: 20px 0px 0px;" align="left" valign="top">
+                        <table class="four columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 180px; margin: 0 auto; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="text-pad" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 24px; font-size: 16px; margin: 0; padding: 10px 20px;" align="left" valign="top">
+
+                              <table class="tiny-button radius" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; overflow: hidden; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: center; color: #ffffff; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 12px; font-size: 16px; display: block; width: auto !important; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; background: #2580b5; margin: 0; padding: 10px;" align="center" bgcolor="#2580b5" valign="top">
+                                    <a href="https://agorafinancial.com/help/?utm_source=email&amp;utm_medium=confirmation%20email&amp;utm_campaign=welcome%20series" style="color: #ffffff; text-decoration: none; font-weight: normal; font-family: Helvetica, Arial, sans-serif; font-size: 12px;">Need Help? Get Answers</a>
+                                  </td>
+                                </tr></table></td>
+
+                            <td class="expander" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 24px; font-size: 16px; margin: 0; padding: 0;" align="left" valign="top"></td>
+                          </tr></table></td>
+                    </tr></table><!--END Footer Links--><!--Footer--><table class="rowz" bgcolor="#0f4767" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; padding: 0px;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="wrapper last" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 24px; font-size: 16px; margin: 0; padding: 20px 0px 0px;" align="left" valign="top">
+
+                        <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="text-pad footer" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #6c8496; font-family: Arial, Helvetica, sans-serif; font-weight: normal; line-height: 1.6; font-size: 12px; border-top-color: #2d85b8; border-top-width: 1px; border-top-style: solid; mso-line-height-rule: exactly; margin: 0; padding: 24px 20px;" align="left" valign="top">
+                              <img src="https://duip7hn7nchpo.cloudfront.net/af-email-footer-logo.png" alt="Agora Financial" title="Agora Financial" height="56" width="56" align="left" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: left; clear: both; display: block;" />
+                              Please note: We sent this e-mail to you because you are subscribed to this service. To cancel by mail or for any other subscription issues, write us at: Customer Service | 808 St Paul St | Baltimore, MD 21202 USA. Nothing in this e-mail should be considered personalized investment advice. Although our employees may answer your general customer service questions, they are not licensed under securities laws to address your particular investment situation. No communication by our employees to you should be deemed as personalized investment advice. We expressly forbid our writers from having a financial interest in any security recommended to our readers. All of our employees and agents must wait 24 hours after on-line publication or 72 hours after the mailing of printed-only publication prior to following an initial recommendation. Any investments recommended in this letter should be made only after consulting with your investment advisor and only after reviewing the prospectus or financial statements of the company.
+                              <br /><br />
+                              © Agora Financial, LLC. All Rights Reserved. Protected by copyright laws of the United States and international treaties. This Newsletter may only be used pursuant to  the subscription agreement and any reproduction, copying, or redistribution (electronic or otherwise, including on the world wide web) , in whole or in part, is strictly prohibited without the express written permission of Agora Financial, LLC. 808 Saint Paul Street, Baltimore MD 21202.
+                              <br /><br /></td>
+                            <td class="expander" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 24px; font-size: 16px; margin: 0; padding: 0;" align="left" valign="top"></td>
+                          </tr></table></td>
+                    </tr></table><!--END Footer--></td>
+              </tr></table><!-- END Email Content --></center>
+        </td>
+      </tr></table>    
+</div></body></html>
