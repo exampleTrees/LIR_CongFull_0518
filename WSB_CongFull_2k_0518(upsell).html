@@ -1,0 +1,2481 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+
+<html><head>
+
+    <meta http-equiv="PRAGMA" content="NO-CACHE" />
+    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE" />
+    <meta http-equiv="EXPIRES" content="NOW" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://d13p2xj50zkyqm.cloudfront.net/scripts/test/orderformtest.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <script charset="ISO-8859-1" src="https://fast.wistia.com/assets/external/E-v1.js"></script>
+
+ <!--=====     Fonts Below Here  =====-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i" rel="stylesheet">
+    <!--=====     Fonts Above Here  ======-->
+
+    <style>
+        h4 {
+              font-family: Arial !important;
+            font-size: 2.2em;
+            text-align: center;
+            font-weight: 600;
+            padding-top: 1em;
+        }
+        h3{
+            font-family: Arial !important;
+        }
+
+        h2 {
+            margin-bottom: 1em;
+        }
+
+         body {
+      background-color: #CCCCCC;
+      font-family: Arial !important;
+    }
+        div.formwrapper {
+            margin-top: 0;
+            box-shadow: none;
+            border: none;
+            border-radius: 0;
+            max-width: 75em;
+            width: 100%;
+            background: none;
+        }
+
+        .top {
+            width: 100%;
+        }
+
+        .logo {
+            width: 30em;
+            margin-top: 4em;
+            display: inline-block;
+            float: left;
+        }
+
+        .timer {
+            width: 25em;
+            margin: 1% 1% 1% 10%;
+            display: inline-block;
+        }
+
+        .number {
+            width: 25em;
+            margin: 2% 1%;
+            display: inline-block;
+            float: right;
+        }
+
+        .clockbutton {
+            background-color: #333;
+            height: 30px;
+            width: 30px;
+            border: thin solid #000;
+            padding: 7px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+        }
+
+        div.background {
+            background-color: #FFF;
+            margin-top: 8em;
+       margin-bottom: 25px;
+        }
+
+        div.testimonial {
+            clear: both;
+        }
+
+        div.audio {
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+            background-color: #FFF;
+            padding-top: 1%;
+        }
+
+        .order_content {
+            background: #FFF;
+        }
+
+        #af_form_wrapper {
+            margin: 0 0 1% 0;
+            border-radius: 0;
+        }
+
+        .listright {
+            border: thin solid black;
+            display: inline-block;
+            width: 45%;
+            float: right;
+            margin: 1% 2%;
+            padding: 1%;
+            -webkit-box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+            -moz-box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+            box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+        }
+
+        .listright ul {
+            margin: 1.25em 1em 1.25em 2.5em;
+        }
+
+        .listleft {
+            border: thin solid black;
+            display: inline-block;
+            width: 45%;
+            margin: 1% 2%;
+            padding: 1%;
+            -webkit-box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+            -moz-box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+            box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+        }
+
+        .listleft ul {
+            margin: 1.25em 1em 1.25em 2.5em;
+        }
+
+        .listleft li {
+            margin-top: 2.37em;
+        }
+
+        .list {
+            border: thin solid black;
+            -webkit-box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+            -moz-box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+            box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+            margin: 5% 5%;
+        }
+
+        .center {
+            text-align: center;
+
+
+            font-size: 1.7em;
+            margin:2% 10%;
+            font-weight: bold;
+            font-family: Georgia;
+        }
+        .test {
+                width: 100%;
+                background: #FFF;
+            }
+
+        .header {
+            display: block;
+            width: 80%;
+            margin: 2em auto;
+        }
+
+        .header h4 {
+            text-align: left;
+            float: right;
+            margin-top: 1.5em;
+            margin-left: 0;
+        }
+
+        h1 {
+            margin: 0 auto;
+        }
+
+        .deck {
+            text-align: center;
+            color: #af0a0a;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .indent{
+          padding-left: 25px;
+          padding-right: 25px;
+        }
+        h3.wait{
+          color:red;
+          font-size: 4rem;
+          padding-top: 25px;
+          margin:0px!important;
+        }
+
+    /*----------=============  Headline  =============--------*/
+    h1, h2 {
+      font-family: 'Georgia', sans-serif;
+      font-size: 550%;
+    }
+
+    h2 {
+      margin-top: -2%;
+    }
+    /*----------=============  /Headline  =============--------*/
+
+    /*----------=============  Body  =============--------*/
+    /* div.contentwrapper {
+      box-shadow: none;
+      border: none;
+    }
+
+    body {
+      background: none;
+    } */
+
+    img.box {
+      float: right;
+      margin-top: 2%;
+      padding-right: 2%;
+      width: 30%;
+    }
+
+    img.tablet {
+      float: right;
+      padding-right: 2%;
+      width: 30%;
+    }
+
+    img.email {
+      width: 50%;
+    }
+
+    img.changes {
+      width: 80%;
+    }
+
+    h4 {
+      font-size: 250%;
+      margin-left: 2.5%;
+    }
+
+    .green {
+      color: green;
+    }
+
+    img.signature {
+      padding-left: 2%;
+    }
+
+    br.break-800, br.break-639, br.break-400, br.break-320 {
+      display: none;
+    }
+    /*----------=============  /Body  =============--------*/
+
+    /*----------============= Queriers  =============--------*/
+    /*-------------------------------------*/
+    @media screen and (max-width: 963px) {
+      h1, h2 {
+        font-size: 500%;
+      }
+    }
+
+    /*-------------------------------------*/
+    @media screen and (max-width: 800px) {
+      h1 {
+        margin-top: -1%;
+        font-size: 450%;
+      }
+
+      h2 {
+        font-weight: 700;
+        font-size: 450%;
+        margin-bottom: 3%;
+      }
+
+      h4 {
+        font-size: 250%;
+        margin-left: 2.5%;
+        margin-right: 3%;
+      }
+
+      img.box {
+        width: 40%;
+        margin-right: 1%;
+        margin-top: 1%;
+      }
+
+      img.tablet {
+        width: 40%;
+        margin-top: 1%;
+      }
+
+      img.changes {
+        width: 85%;
+      }
+
+      br.break-800 {
+        display: inline;
+      }
+
+      br.break-page, br.break-639, br.break-400, br.break-320 {
+        display: none;
+      }
+    }
+    /*-------------------------------------*/
+    @media screen and (max-width:639px){
+      h1 {
+        margin-top: 3%;
+        font-size: 380%;
+      }
+
+      h2 {
+        font-size: 380%;
+        margin-bottom: 5%;
+      }
+
+      p.start {
+        padding-top: 3%;
+      }
+
+      img.box {
+        float: none;
+        margin: 0 auto;
+        padding: 0 auto;
+        padding-left: 10%;
+        width: 55%;
+      }
+
+      img.invoice {
+        width: 75%;
+      }
+
+      img.tablet {
+        float: none;
+        padding-right: 0;
+        width: 55%;
+      }
+
+      img.email {
+        width: 60%;
+      }
+
+      img.changes {
+        width: 100%;
+      }
+
+      ul li {
+        font-size: 90%;
+      }
+
+      ul.checkmark {
+        margin: 1.25rem 2.25rem;
+      }
+
+      h4 {
+        font-size: 220%;
+        margin-left: 2.5%;
+      }
+
+      br.break-639 {
+        display: inline;
+      }
+
+      br.break-page, br.break-800, br.break-400, br.break-320 {
+        display: none;
+      }
+      
+    }
+    /*-------------------------------------*/
+    @media screen and (max-width:414px){
+      h1 {
+        margin-top: 4%;
+        font-size: 245%;
+      }
+
+      h2 {
+        font-size: 245%;
+        margin-bottom: 5%;
+      }
+
+      ul li {
+        font-size: 90%;
+        margin: 1.25rem .75rem;
+      }
+
+      h4 {
+        font-size: 190%;
+      }
+
+      img.email {
+        width: 80%;
+      }
+
+      img.box, img.tablet, img.invoice {
+        width: 70%;
+      }
+
+      ul.checkmark {
+        margin: 1.25rem .5rem;
+      }
+
+      img.signature {
+        width: 55%;
+        padding-left: 4.5%;
+      }
+
+      br.break-400 {
+        display: inline;
+      }
+
+      br.break-page, br.break-800, br.break-639, br.break-320 {
+        display: none;
+      }
+    }
+    /*-------------------------------------*/
+    @media screen and (max-width:411px){
+      h1 {
+        margin-top: 4%;
+        font-size: 235%;
+      }
+
+      h2 {
+        font-size: 245%;
+        margin-bottom: 5%;
+      }
+
+      br.break-400 {
+        display: inline;
+      }
+
+      br.break-page, br.break-800, br.break-639, br.break-320 {
+        display: none;
+      }
+    }
+
+    /*-------------------------------------*/
+    @media screen and (max-width:400px){
+      h1 {
+        margin-top: 4%;
+        font-size: 235%;
+      }
+
+      h2 {
+        font-size: 245%;
+        margin-bottom: 5%;
+      }
+
+      br.break-400 {
+        display: inline;
+      }
+
+      br.break-page, br.break-800, br.break-639, br.break-320 {
+        display: none;
+      }
+    }
+
+    /*-------------------------------------*/
+    @media screen and (max-width:375px){
+      h1 {
+        margin-top: 4%;
+        font-size: 220%;
+      }
+
+      h2 {
+        font-size: 230%;
+        margin-bottom: 5%;
+      }
+
+      br.break-400 {
+        display: inline;
+      }
+
+      br.break-page, br.break-800, br.break-639, br.break-320 {
+        display: none;
+      }
+    }
+
+    /*-------------------------------------*/
+    @media screen and (max-width:360px){
+      h1 {
+        margin-top: 4%;
+        font-size: 210%;
+      }
+
+      h2 {
+        font-size: 220%;
+        margin-bottom: 5%;
+      }
+
+      br.break-400 {
+        display: inline;
+      }
+
+      br.break-page, br.break-800, br.break-639, br.break-320 {
+        display: none;
+      }
+    }
+
+    /*-------------------------------------*/
+    @media screen and (max-width:320px){
+      h1 {
+        margin-top: 4%;
+        font-size: 185%;
+      }
+
+      h2 {
+        font-size: 220%;
+        margin-bottom: 5%;
+      }
+
+      br.break-320 {
+        display: inline;
+      }
+
+      br.break-page, br.break-800, br.break-639, br.break-400 {
+        display: none;
+      }
+    }
+    /*----------=============  /Queries  =============--------*/
+</style>
+
+   
+        
+        
+    
+        
+        <script src="https://images.web-purchases.com/jQuery/jquery.min.js" type="text/javascript"></script>
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+            <title>Wait! Before You Go....</title>
+</head><body>
+<style type="text/css">
+    .warning-message {
+        position: fixed;
+        top: 0px;
+        left: 10px;
+        margin: 0px;
+        height: 100%;
+        width: 100%;
+        background-color: #ffffff;
+    }
+</style>
+<div id="warning-message" class="warning-message">
+  <noscript>
+    
+<h1>JavaScript must be enabled to complete this purchase. </h1>
+<p>Dear Reader, </p>
+<p>JavaScript must be enabled in order to use this site. </p>
+<p>If you know how to enable JavaScript in your browser, please do so now. </p>
+<p><strong>Please call now, and we can help you right away: 1-888-295-0140</strong>. </p>
+<p>Thank you. </p>  </noscript>
+  <div id="no-cookie" style="display:none">
+
+<h1>Cookies must be enabled to complete this purchase. </h1>
+<p>Dear Reader, </p>
+<p>Cookies must be enabled in order to use this site. </p>
+<p>If you know how to enable Cookies in your browser, please do so now. </p>
+<p>The Help portion of the toolbar on most browsers will tell you how to set your browser to enable cookies. </p>
+<p><strong>Please call now, and we can help you right away: 1-888-295-0140</strong>. </p>
+<p>Thank you. </p>  </div>
+</div>
+<div id='mainContainer' class='container'>
+<!-- dependent name: trackerVars -->
+
+
+
+    <div class="formwrapper">
+
+        <div class="background">
+   
+
+
+<div class="row small-12 column"><!-- Start of Headline -->
+
+<p align="center"><strong>WAIT! Before You Go…</strong></p>
+<h1>I Have an Important Announcement about this Black Box I’m Holding in My Hand</h1>
+<!-- <hr> -->
+
+<p align="center"><strong><span class="red">WARNING:</span> Due to the controversial content, this video could be pulled from the web by the end of the day</strong></p>
+<!-- [Insert Video]-->
+
+<div class="wistia_responsive_wrapper" style="max-height:360px;max-width:640px; margin:0 auto; margin-bottom: 2em; -webkit-box-shadow: 0px 0px 26px 0px rgba(50, 50, 50, 1);-moz-box-shadow: 0px 0px 26px 0px rgba(50, 50, 50, 1);box-shadow: 0px 0px 26px 0px rgba(50, 50, 50, 1);">
+<div class="wistia_embed wistia_async_1sy7xnul6t videoFoam=true playbar=false fullscreenButton=false  playButton=true autoPlay=false" style="max-width:640px;max-height:360px;">&nbsp;</div>
+</div>
+<!-- /End of Video --><!-- Start of Body Section -->
+
+<p class="start">Hi, I&rsquo;m Zach Scheidt.</p>
+
+<p>In my hands I am holding what I believe to be one of the most powerful investing tools<br class="break-page" />
+of all time.</p>
+
+<p>It&rsquo;s a small black box&hellip;</p>
+
+<p>No bigger than a coffee mug.</p>
+
+<p>But this black box unlocks an incredible secret&hellip;</p>
+
+<p>A secret that can help you pinpoint HUGE moves in the stock market&hellip;</p>
+
+<p>BEFORE they happen.</p>
+
+<p>Giving you the chance to walk away with an average of $16,209 every week!</p>
+
+<p>The tool it&rsquo;s based on is so powerful&hellip;</p>
+
+<p>That it helped me personally make my fund over $8 million in a few<br class="break-800" />
+short years&hellip;</p>
+
+<p>I&rsquo;ll reveal everything in just a moment&hellip;</p>
+
+<p id="gif1Trigger">But for now, all you need to know is this box is so easy to use&hellip;</p>
+
+<p>All you have to do is connect the black box to your computer&hellip;</p>
+
+<p>Open the program&hellip; wait for the broadcast&hellip; then make your move&hellip;</p>
+<img class="image_center" id="gif1" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-Novavax-01.png" />
+<p>Once you&rsquo;re notified of the information&hellip;</p>
+
+<p>You&rsquo;re in position to place one simple trade&hellip;</p>
+
+<p>Then cash out a few days later&hellip;</p>
+
+<p>&hellip;With a potential fortune!</p>
+
+<p><strong>I&rsquo;m talking about as much as $7,484<br class="break-400" />
+in 15 days&hellip; $16,408 in seven days&hellip;<br class="break-page" />
+<br class="break-400" />
+and even $31,026 in nine days.</strong></p>
+
+<p>Even though most people don&rsquo;t know about the origins of this box, its history dates back<br class="break-page" />
+to the early 2000s&hellip;</p>
+
+<p>When my hedge fund was working on a secret project with Wall Street giant Bear Stearns.</p>
+
+<p>The top echelon of the hedge fund industry used a small black box not so different<br class="break-page" />
+in appearance from the box I am holding right now.</p>
+
+<p>Since I was one of them, I had one on my desk too.</p>
+
+<p>And every week, the box would send me an urgent alert&hellip; like the one you<br class="break-800" />
+just heard.</p>
+
+<p>Telling me about what I call &ldquo;front trades&rdquo;&hellip; or big market moves that allow big players<br class="break-page" />
+on Wall Street to spot these big winners&hellip; often BEFORE everyday folks like you.</p>
+
+<p>These front trades are 100% legal and allowed me to find some of the most overlooked opportunities in the market&hellip;</p>
+
+<p>Pretty soon, I was using this black box to generate some of the most lucrative trades<br class="break-page" />
+at my hedge fund.</p>
+
+<p>But when Bear Sterns collapsed in 2008&hellip;</p>
+
+<p>The entire project collapsed.</p>
+
+<p>And the tool that helped me personally make over $8 million was erased<br class="break-800" />
+from history.</p>
+
+<p>That is&hellip;</p>
+
+<p>Until now.</p>
+
+<h3>Today, I Am Making<br class="break-400" />
+the Most Important<br class="break-page" />
+Announcement<br class="break-400" />
+of My Career</h3>
+
+<p>You see&hellip;</p>
+
+<p>This particular tool was NEVER made available outside the big Wall<br class="break-800" />
+Street banks.</p>
+
+<p>If you were not an insider like myself, you were out of luck.</p>
+
+<p>And that really gave Wall Street an unfair advantage over the little guy&hellip;</p>
+
+<p>Because as TheStreet.com says: &ldquo;[The original black box] can be a major advantage<br class="break-page" />
+to traders trying to cash in on sudden price movement in a stock.&rdquo;</p>
+
+<p>That rigged game changes today&hellip;</p>
+
+<p>Because as a leading analyst of the &ldquo;black box project&rdquo;&hellip;</p>
+
+<p>I made it my life mission to resurrect the secret behind the most powerful investing tool<br class="break-page" />
+in history.</p>
+
+<p>And after a revolutionary decade-long project&hellip;</p>
+
+<p>I am officially announcing the return of the black box&hellip; designed specifically<br class="break-800" />
+for everyday folks like you.</p>
+
+<p>I&rsquo;ll even give away a limited number of black boxes today. Yes, I&rsquo;ll send you your very own black box by certified mail.</p>
+
+<p>Just keep in mind&hellip;</p>
+
+<p>After I left the hedge fund, I was not allowed to take any information about the black box<br class="break-page" />
+with me, including its incredible track record.</p>
+
+<p>It was all proprietary data&hellip;</p>
+
+<p>NEVER to be released to what Wall Street insiders call &ldquo;unauthorized persons.&rdquo;</p>
+
+<p>So because my new and improved black box has never been made<br class="break-800" />
+public before&hellip;</p>
+
+<p>All the trade examples I&rsquo;ll mention today are necessarily drawn from how this could&rsquo;ve performed by analyzing historical data.</p>
+
+<p>And with new technological advancements&hellip;</p>
+
+<h3>This Tool Is So Powerful&hellip;<br class="break-page" />
+<br class="break-800" />
+<br class="break-639" />
+I Am Calling It the Income Box</h3>
+
+<p>As you&rsquo;re about to see, the Income Box strategy could help you pocket<br class="break-800" />
+$16,209 every<br class="break-page" />
+seven days&hellip;</p>
+
+<p><u>That equates to $842,868 a year.</u></p>
+
+<p>And when you see how easy it is to use&hellip;</p>
+
+<p id="gif2Trigger">You&rsquo;ll never invest the same way again.</p>
+
+<p>For example&hellip;</p>
+
+<p>Take a look at what happened to multibillion-dollar corporation Novavax this past January&hellip;</p>
+<img class="image_center" id="gif2" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-Novavax-01.png" />
+<p>For the two years prior, Novavax was plummeting in stock price due to a failed FDA test<br class="break-page" />
+for their RSV vaccine.</p>
+
+<p>This one promising biotech company lost their best product&hellip; and they weren&rsquo;t making<br class="break-page" />
+any money.</p>
+
+<p>Everyone thought this stock was headed for bankruptcy&hellip;</p>
+
+<p id="gif3Trigger">Except the Income Box&hellip;</p>
+
+<p>Which gave the buy signal for January 9&hellip;</p>
+
+<p>Take a look.</p>
+<img class="image_center" id="gif3" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-Novavax-02.png" />
+<p>That sound you just heard meant big players on Wall Street were trying to get<br class="break-800" />
+in before everyday folks on an upcoming big move in Novavax.</p>
+
+<p>Now keep in mind&hellip;</p>
+
+<p>The day the Income Box signaled the buy alert, there wasn&rsquo;t any news regarding Novavax&hellip;</p>
+
+<p>There was nothing out of the ordinary&hellip;</p>
+
+<p>And there weren&rsquo;t any press releases scheduled.</p>
+
+<p>But the Income Box calculated that someone was trying to beat everyday investors<br class="break-page" />
+on an upcoming big move&hellip;</p>
+
+<p>And just one day after the Income Box signaled the alert&hellip;</p>
+
+<p>An investment banking company named B. Riley made an EYE-POPPING upgrade<br class="break-page" />
+on Novavax.</p>
+
+<p>Simply put&hellip;</p>
+
+<p>The stock EXPLODED.</p>
+
+<p>Investors could have seen a 63% return in a SINGLE day thanks to the<br class="break-800" />
+Income Box&hellip;</p>
+
+<p>Most people missed that big move. They were beat because they couldn&rsquo;t spot<br class="break-page" />
+the front trade!</p>
+
+<p>And by the time they heard the news, it was already too late to make the biggest profits&hellip;</p>
+
+<p>Because this announcement completely surprised investors.</p>
+
+<p>No one was supposed to know B. Riley was about to upgrade the stock.</p>
+
+<p>But had you used my Income Box strategy, you would have known something big was about to happen&hellip;</p>
+
+<p>And you could have got in BEFORE the report was released.</p>
+
+<p>Allowing you to capture a one-day gain of 63% on a multibillion-dollar health<br class="break-page" />
+care company&hellip;</p>
+
+<p>Simply by purchasing their regular stock!</p>
+
+<p>Imagine investing $5,000&hellip;</p>
+
+<p>And walking away with $8,167 in less than 24 hours&hellip;</p>
+<img class="image_center" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-figures-Novavax.png" />
+<p>Without risking your money in dangerous options.</p>
+
+<p>That&rsquo;s the power of the Income Box strategy&hellip;</p>
+
+<p>It measures when hedge funds have just placed MASSIVE &ldquo;front trades&rdquo;<br class="break-800" />
+on stocks&hellip;</p>
+
+<p>Trying to beat everyday investors&hellip; and get in before big moves in the market.</p>
+
+<p>As I&rsquo;ll explain in a moment, these front trades are different from regular trades&hellip;</p>
+
+<p>They&rsquo;re purposely downplayed to the public&hellip; so nobody knows what&rsquo;s<br class="break-800" />
+really happening.</p>
+
+<p>But by simply piggybacking them&hellip;</p>
+
+<p>You can profit to the tune of $8,167, $14,711, even $44,850!</p>
+
+<p>And it&rsquo;s so easy&hellip;</p>
+
+<p>All you have to do is place a simple trade when you get my alert&hellip;</p>
+
+<p>And cash out a few weeks later!</p>
+
+<h3>It&rsquo;s the Only Way I Know for<br class="break-800" />
+Mom-and-Pop Investors to Turn<br class="break-800" />
+the Tables on Wall Street<br class="break-page" />
+and Get<br class="break-800" />
+Ahead of Big, Unexpected Moves&hellip;<br class="break-800" />
+BEFORE They Happen&hellip;</h3>
+
+<p id="gif4Trigger">For example&hellip;</p>
+
+<p>Take a look at what happened on October 27&hellip;</p>
+
+<p>That&rsquo;s when the Income Box gave the buy signal on Whiting Petroleum&hellip;</p>
+<img class="image_center" id="gif4" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-Whiting-01.png" />
+<p>Nothing was happening that day&hellip;</p>
+
+<p>There wasn&rsquo;t any crazy news regarding Whiting&hellip;</p>
+
+<p>No one was expecting anything&hellip;</p>
+
+<p>In fact&hellip;</p>
+
+<p>This multibillion-dollar oil titan was in a three-year slump ever since OPEC ramped up production in the Middle East&hellip; causing the price of oil to plummet.</p>
+
+<p>And with Whiting&rsquo;s enormous debt load, it seemed like this oil company was on its last legs.</p>
+
+<p>From the news, it looked like everyone was selling their shares&hellip;</p>
+
+<p>HOWEVER&hellip;</p>
+
+<p id="gif5Trigger">The Income Box had a different opinion&hellip;</p>
+
+<p>And on October 23&hellip; the buy signal flashed.</p>
+
+<p>Take a look&hellip;</p>
+<img class="image_center" id="gif5" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-Whiting-03.png" />
+<p>That little sound meant that someone on Wall Street was trying to get IN FRONT of everyday folks like you.</p>
+
+<p>Then a few days later, on October 25&hellip;</p>
+
+<p>Whiting Petroleum surprised investors by announcing a 78% increase in production in their Denver Basin drilling region.</p>
+
+<p>Had you acted when the Income Box gave me the alert&hellip;</p>
+
+<p>You could have walked away with $7,500&hellip;</p>
+
+<p>In just two weeks!</p>
+<img class="image_center" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-figures-Whiting.png" />
+<p>Just by purchasing regular stock!</p>
+
+<p>Again, most regular investors missed the big movement from that trade&hellip;</p>
+
+<p>There was no way for you to know that their production numbers were so high.</p>
+
+<p>And if you had waited for the news&hellip;</p>
+
+<p>You would have missed out on this profit.</p>
+
+<p>But it was like the Income Box strategy could pinpoint something was going<br class="break-800" />
+to happen.</p>
+
+<p>And had you just waited for the buy signal&hellip;</p>
+
+<p>And placed one simple trade&hellip;</p>
+
+<p>You could have made a small fortune in just a few short days&hellip;</p>
+
+<p>Without risking your money in options, futures or anything extra risky.</p>
+
+<p>It&rsquo;s that easy!</p>
+
+<h3>You&rsquo;re In. You&rsquo;re Out. You&rsquo;re Paid.<br class="break-page" />
+Nobody<br class="break-400" />
+Will Ever Take What&rsquo;s Yours Again.</h3>
+
+<p>That&rsquo;s how I personally made my fund $8 million from the original black box.</p>
+
+<p>In fact, this tool is so powerful and so reliable that it was even investigated by the SEC<br class="break-page" />
+on multiple occasions.</p>
+
+<p>After authorities noticed bigwigs on Wall Street were making millions following this box&hellip;</p>
+
+<p>They thought maybe there was something fishy going on&hellip;</p>
+
+<p>Just like John from AB Watley, who used a similar box to make $650,000&hellip;</p>
+
+<p>Or Warren, who generated &ldquo;$125,000 in gross profits&rdquo; using a similar box&hellip;</p>
+
+<p>And Ralph from Citigroup, who made over $600,000&hellip;</p>
+
+<p>But after months of investigation, they concluded that the system<br class="break-800" />
+was 100% legal.</p>
+
+<p>So this is not only 100% legal&hellip;</p>
+
+<p>But it could also be the easiest moneymaking strategy you&rsquo;ve ever seen.</p>
+
+<p>For example, look what happened to a company called Harvard Bioscience&hellip;</p>
+
+<p>This publicly traded company was created by Harvard Medical School.</p>
+
+<p>And backed by Harvard&rsquo;s $35 billion endowment&hellip;</p>
+
+<p>Harvard Bioscience distributes products in over 100 countries around<br class="break-800" />
+the world&hellip;</p>
+
+<p>Yet despite their prestigious alma mater, Harvard Bioscience was<br class="break-800" />
+in the red each quarter&hellip;</p>
+
+<p>And since 2015, they had lost over 60% of their value.</p>
+
+<p>Investors were selling shares left and right.</p>
+
+<p id="gif6Trigger">But despite all of the downward pressure&hellip;</p>
+
+<p id="gif7Trigger">The Income Box flashed the buy signal on December 26.</p>
+
+<p>Which meant someone was trying to take a position before a big<br class="break-800" />
+market move&hellip;</p>
+<img class="image_center" id="gif6" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-Harvard-01.png" />
+<p>Just a few weeks later, Harvard Bioscience announced the takeover<br class="break-page" />
+of Data Sciences International.</p>
+
+<p>The impact was extraordinary&hellip;</p>
+<img class="image_center" id="gif7" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-Harvard-02.png" />
+<p>And management expected an immediate $24.5 million boost to their revenue.</p>
+
+<p>Had you gotten in on December 26, when the Income Box flashed the buy signal, you could have pocketed $7,698 in just a few weeks.</p>
+<img class="image_center" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-figures-Harvard.png" />
+<p>Once again, those who placed these trades walked away with a fortune&hellip;</p>
+
+<p>While everyday folks were left with nothing.</p>
+
+<p>Because unless you worked for Harvard Bioscience, you would have had<br class="break-800" />
+no idea that this news was coming.</p>
+
+<p id="gif8Trigger">That&rsquo;s where the Income Box strategy comes in&hellip;</p>
+
+<h3>All You Had to Do for the Chance<br class="break-800" />
+<br class="break-639" />
+to Profit Was&hellip;<br class="break-page" />
+Wait for the Buy Signal&hellip; Purchase Regular Shares&hellip; Then Cash Out<br class="break-800" />
+<br class="break-400" />
+a Few Days Later!</h3>
+
+<p>Just check out this chart from Valeant Pharmaceuticals, one of the largest pharmaceutical companies in the world.</p>
+<img class="image_center" id="gif8" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-Valeant.png" />
+<p>Had you used the Income Box&hellip; you could have turned a modest<br class="break-800" />
+$5,000 investment<br class="break-page" />
+into $8,582&hellip;</p>
+
+<p>Simply by placing a bet on November 16&hellip;</p>
+
+<p>And cashing out a few weeks later.</p>
+
+<p id="gif9Trigger">That&rsquo;s a 72% return&hellip;</p>
+
+<p>From one of the largest pharmaceutical companies in the world!</p>
+
+<p>Same thing for Weed Inc., the first publicly traded marijuana company<br class="break-800" />
+in the U.S.</p>
+<img class="image_center" id="gif9" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-Weed.png" />
+<p>You could have placed a $5,000 bet on December 19, when the Income Box signaled<br class="break-page" />
+the buy&hellip;</p>
+
+<p>And you could have walked away with $27,941 on January 9!</p>
+<img class="image_center" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-figures-Weed.png" />
+<p>That&rsquo;s a 459% return&hellip;</p>
+
+<p>Just by receiving a buy alert, placing one simple trade&hellip;</p>
+
+<p>Then cashing out a few weeks later!</p>
+
+<p>Do you now see how powerful this strategy is?</p>
+
+<p>Do you see why hedge funds and the big banks on Wall Street never wanted<br class="break-800" />
+it to leave<br class="break-page" />
+their offices?</p>
+
+<p>It&rsquo;s really not fair this tool was unknown to everyday folks like you for so long&hellip;</p>
+
+<p>Because this strategy allows you to pocket an average of $16,209 every<br class="break-800" />
+seven days&hellip;</p>
+
+<p><u>That equates to $842,868 a year.</u></p>
+
+<p>Enough money to finally buy that beach home in Florida&hellip;</p>
+
+<p>Or get that new Corvette convertible that&rsquo;s always caught your eye&hellip;</p>
+
+<p>Or pay off all your debts.</p>
+
+<p>But since these are short-term plays&hellip;</p>
+
+<p>You don&rsquo;t tie up your money in the market long term.</p>
+
+<p>Which means you not only have the chance to make HUGE capital gains&hellip;</p>
+
+<p>You&rsquo;re also cutting your risk.</p>
+
+<p>Not to mention you&rsquo;re simply buying regular shares, instead of risking your money with dangerous options.</p>
+
+<p>That&rsquo;s my favorite part of this strategy.</p>
+
+<p>You can see HUGE gains simply by buying regular stock!</p>
+
+<p>Like all investments, these recommendations may not all be winners, and they<br class="break-page" />
+do carry risk&hellip;</p>
+
+<p>But the risk is MUCH smaller than if you were to purchase options that can easily lose<br class="break-page" />
+100% of their value.</p>
+
+<p>And of course it depends on how much you put in&hellip;</p>
+
+<p>But that means you can take advantage of this strategy for under $50&hellip;</p>
+
+<p>Isn&rsquo;t that incredible?</p>
+
+<p>And let me tell you this&hellip;</p>
+
+<h3>If You&rsquo;ve Missed Out on These Big Moves<br class="break-800" />
+<br class="break-639" />
+in the Past, It&rsquo;s Not Your Fault&hellip;</h3>
+
+<p>Most people are in the dark when it comes to these huge front trades&hellip;</p>
+
+<p>That&rsquo;s because they don&rsquo;t typically happen in the open market&hellip;</p>
+
+<p>Not the NYSE&hellip; Nasdaq&hellip; or even OTC&hellip;</p>
+
+<p>As you can probably imagine, these people don&rsquo;t want anyone to know they&rsquo;re making<br class="break-page" />
+big moves.</p>
+
+<p>That&rsquo;s why these trades happen in something called dark pools.</p>
+
+<p>I&rsquo;ll explain more about dark pools in a minute&hellip;</p>
+
+<p>But without the Income Box strategy&hellip;</p>
+
+<p>It&rsquo;s impossible for the little guy to know when these trades happen&hellip;</p>
+
+<p>And you&rsquo;re unlikely to catch the big, unexpected moves that happen<br class="break-800" />
+in the weeks following the front trade.</p>
+
+<p>What I mean is&hellip;</p>
+
+<p>You only know about the big stock market moves AFTER they already<br class="break-800" />
+take place.</p>
+
+<p>And at that rate&hellip;</p>
+
+<p>You&rsquo;ll never make money if you are always a step behind.</p>
+
+<p>That&rsquo;s why my Income Box has completely revolutionized the investing game.</p>
+
+<p>This is a brand-new way of making money&hellip;</p>
+
+<p>Where you can get in BEFORE big stock moves.</p>
+
+<p>Not after all of the insiders have made their money by getting in before YOU&hellip;</p>
+
+<p>To my knowledge&hellip;</p>
+
+<p>This is <u>the only</u> way for mom-and-pop investors to get ahead of Wall Street.</p>
+
+<p>Because I am sure you have always suspected it&hellip;</p>
+
+<p>But it&rsquo;s easy to forget that&hellip;</p>
+
+<h3>The Wall Street Game<br class="break-400" />
+Is Rigged<br class="break-page" />
+<br class="break-800" />
+<br class="break-639" />
+Against People Like You</h3>
+
+<p>Look, in the hedge fund community, the 1% of the 1% are closely knit&hellip;</p>
+
+<p>Where corporate executives and billion-dollar money managers schmooze over vintage wine in prestigious clubs&hellip;</p>
+
+<p>Anything is talked about in a place where cellphones are prohibited&hellip;</p>
+
+<p>And Ferraris are rented out &ldquo;gratis&rdquo; for members.</p>
+
+<p>Oftentimes&hellip;</p>
+
+<p>Information that hasn&rsquo;t reached the public &ldquo;slips&rdquo;&hellip;</p>
+
+<p>Because let&rsquo;s be honest&hellip;</p>
+
+<p>Even if you&rsquo;ve got a billion dollars to deploy&hellip;</p>
+
+<p>A few drinks still gets people talking&hellip;</p>
+
+<p>And information regarding analyst upgrades&hellip;</p>
+
+<p>Takeover deals&hellip;</p>
+
+<p>New product releases&hellip;</p>
+
+<p>Even news regarding mergers and acquisitions tends to flow freely.</p>
+
+<p>And even though this information is &ldquo;secret&rdquo;&hellip;</p>
+
+<p>Hedge funds often use it to their advantage&hellip;</p>
+
+<p>And they try to get in front of the market move by placing those front trades&hellip;</p>
+
+<p>Profiting from events that are seemingly unknown to the average investor.</p>
+
+<p>Because unless you&rsquo;re in the inner circle, you&rsquo;ll miss making money<br class="break-800" />
+on those events.</p>
+
+<p>Put simply&hellip;</p>
+
+<p>Hardworking Americans like you have <u>no chance</u> of making real profits<br class="break-800" />
+in the stock market.</p>
+
+<p>Does that seem fair to you?</p>
+
+<p>Of course not!</p>
+
+<h3>But Today, I Am Going<br class="break-400" />
+to Reveal<br class="break-639" />
+How My Income Box Finally Levels the Playing Field Against the Wall Street Elite</h3>
+
+<p>As I mentioned before, my name is Zachary Scheidt.</p>
+
+<p>I spent my career as a multimillion-dollar hedge fund manager in Atlanta&hellip;</p>
+
+<p>Where I saw the ins and outs of HUGE money flows to the tune of billions.</p>
+
+<p>And it was at that hedge fund where I saw how the system was rigged for the wealthy elite&hellip;</p>
+
+<p>It all started in the year 2000&hellip;</p>
+
+<p>When the internet was rapidly expanding&hellip;</p>
+
+<p>And my hedge fund, along with Bear Stearns, was testing a device that would revolutionize the investing game for the ultra-wealthy&hellip;</p>
+
+<p>It was called the squawk box.</p>
+
+<p>&ldquo;Squawk boxes&rdquo; are devices that broadcast, within a securities firm, institutional orders to buy and sell large blocks of securities.</p>
+
+<p>They also send exclusive information from leading analysts across<br class="break-800" />
+every industry.</p>
+
+<p>And every week&hellip;</p>
+
+<p>The squawk box would send me information&hellip;</p>
+
+<p>Which I could use to determine where huge trades were being made&hellip;</p>
+
+<p>That&rsquo;s not easy to do.</p>
+
+<p>As you can probably imagine, the big dogs on Wall Street do not place trades like you<br class="break-page" />
+and me.</p>
+
+<p>They&rsquo;re not playing with thousands or even hundreds of thousands of dollars.</p>
+
+<p>They&rsquo;re playing with millions and even billions in each single trade.</p>
+
+<p>Because of their massive size, these kinds of trades on not placed on your typical exchange such as the NYSE or NASDAQ.</p>
+
+<p>These types of trades are often placed in a different market&hellip;</p>
+
+<p>In a place called dark pools.</p>
+
+<p>Dark pools are a series of special exchanges and software that institutions and hedge funds build for low transparency.</p>
+
+<p>The thing is&hellip;</p>
+
+<p>Hardly anyone knows the inner workings of dark pools&hellip; and it&rsquo;s a place where hedge funds can place their trades for the global elite&hellip;</p>
+
+<p>As The New York Times reported: &ldquo;While dark trading can benefit some insiders, it may cost the general public as a whole.&rdquo;</p>
+
+<p>Does that sound fair to you?</p>
+
+<p>That&rsquo;s what made the squawk box so powerful&hellip;</p>
+
+<p>It explicitly told us when those trades were happening&hellip;</p>
+
+<p>So we knew exactly how the so-called smart money was betting their money.</p>
+
+<p>And that allowed people to get in trades before BIG, unexpected moves&hellip;</p>
+
+<p>And walk away with a fortune&hellip;</p>
+
+<p>That&rsquo;s why The New York Times reported: &ldquo;Order information transmitted over the squawk boxes was sensitive.&rdquo;</p>
+
+<p>Yes, it was sensitive, because it virtually guaranteed you&rsquo;d walk away with<br class="break-800" />
+easy money.</p>
+
+<h3 id="gif10Trigger">Because When You Follow<br class="break-639" />
+These Front Trades&hellip;<br class="break-page" />
+You Can Make<br class="break-639" />
+a Fortune<br class="break-800" />
+at Lightning Speed</h3>
+
+<p>Just look at what happened to Atara Biotherapeutics this past December&hellip;</p>
+
+<p>On December 8&hellip; the Income Box flashed the buy signal&hellip;</p>
+<img class="image_center" id="gif10" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-Atara-01.png" />
+<p>But at that time&hellip; nothing was happening to this multibillion-dollar<br class="break-800" />
+biotech company&hellip;</p>
+
+<p>In fact&hellip;</p>
+
+<p>Atara Biotherapeutics was behind schedule on their CAR-T cancer drug&hellip;</p>
+
+<p>And it looked like other pharma giants had already conquered that niche.</p>
+
+<p>From publicly available information, this company looked like a certified sell.</p>
+
+<p>However, the Income Box signaled some big player on Wall Street had just made a huge front trade.</p>
+
+<p id="gif11Trigger">And on December 29&hellip; just a few weeks later&hellip;</p>
+
+<p>Atara announced that the FDA gave the green light for Phase 3 testing.</p>
+
+<p>Shares skyrocketed&hellip;</p>
+<img class="image_center" id="gif11" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-Atara-02.png" />
+<p>And unless you worked for Atara or the FDA&hellip; you would have had no idea this announcement was coming&hellip;</p>
+
+<p>And you wouldn&rsquo;t have been able to get in front of the movement.</p>
+
+<p>But if you had used the Income Box strategy&hellip;</p>
+
+<p>You would have walked away with $14,711 a few weeks later!</p>
+<img class="image_center" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-figures-Atara.png" />
+<p>Again, using this strategy&hellip;</p>
+
+<p>All you had to do was receive the buy alert&hellip;</p>
+
+<p>Place one simple trade&hellip;</p>
+
+<p>Then score a quick 194% gain&hellip;</p>
+
+<p>Just a few weeks later!</p>
+
+<p>And just by purchasing regular shares!</p>
+
+<p id="gif12Trigger">That&rsquo;s incredible, isn&rsquo;t it?</p>
+
+<p>Here&rsquo;s another example from my research&hellip;</p>
+
+<p>On January 3, the Income Box gave the buy signal on U.S. Nuclear Corp.</p>
+<img class="image_center" id="gif12" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-Nuclear-01.png" />
+<p>This Los Angeles-based nuclear company is a worldwide leader<br class="break-800" />
+in radiation detection&hellip;</p>
+
+<p>But when the Income Box signaled the buy on January 3&hellip;</p>
+
+<p>Nothing out of the ordinary was happening for this company&hellip;</p>
+
+<p>There were no earnings reports&hellip;</p>
+
+<p>No big press releases scheduled&hellip;</p>
+
+<p>Nothing!</p>
+
+<p id="gif13Trigger">But later that month&hellip;</p>
+
+<p>A report was released that U.S. Nuclear Corp. was partnering with Fusion Power Leader to become a supplier in the $10 billion radioisotope market.</p>
+
+<p>Shares went skyrocketing&hellip;</p>
+<img class="image_center" id="gif13" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-Nuclear-02.png" />
+<p>And had you bought shares before the event&hellip;</p>
+
+<p>You would have made $44,850&hellip;</p>
+
+<p>In less than a month!</p>
+<img class="image_center" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-figures-Nuclear.png" />
+<p>That&rsquo;s a 797% return&hellip; just by purchasing regular stock!</p>
+
+<p>It&rsquo;s so easy.</p>
+
+<p>Wait for the alert&hellip;</p>
+
+<p>Place one simple trade&hellip;</p>
+
+<p>Then profit!</p>
+
+<p>Imagine making more than 40 grand&hellip; in just a month.</p>
+
+<p>Do that once a month, and you&rsquo;re looking at an extra annual income of more than half a million dollars!</p>
+
+<p>And while that would be an exceptional year&hellip; imagine just making half of that.</p>
+
+<p>How would an extra $250,000 change your life?</p>
+
+<p>Would you get a new Mercedes or new boat?</p>
+
+<p>It&rsquo;s scary how much the Income Box strategy could help you make&hellip;</p>
+
+<p>Here&rsquo;s another example&hellip;</p>
+
+<p id="gif14Trigger">Just after Christmas, the Income Box signaled it was time to buy<br class="break-800" />
+on December 26.</p>
+
+<p>It said that Ares Management, one of the largest private equity firms<br class="break-800" />
+in the world&hellip;</p>
+
+<p>Was a screaming buy&hellip;</p>
+<img class="image_center" id="gif14" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-Ares-01.png" />
+<p>But the thing is&hellip;</p>
+
+<p>For the past year&hellip; this multibillion-dollar firm had actually lost 20% of their value&hellip;<br class="break-page" />
+even though the stock market had been crushing record after record.</p>
+
+<p>It looked like this company was going nowhere&hellip;</p>
+
+<p>But the Income Box signaled some players on Wall Street were trying to legally get<br class="break-page" />
+IN FRONT of a big market move&hellip;</p>
+
+<p id="gif15Trigger">And on January 4&hellip;</p>
+
+<p>Ares Management announced a massive $139 million sale of a Florida<br class="break-page" />
+retirement community.</p>
+
+<p>Paired with the newly implemented tax bill&hellip; shares exploded.</p>
+<img class="image_center" id="gif15" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-Ares-02.png" />
+<p>Giving you the chance to make $6,641 in a few weeks&hellip;</p>
+
+<p>From a company with $100 BILLION under management!</p>
+
+<p>Again&hellip; all you had to do was use the Income Box strategy&hellip;</p>
+
+<p>Place one simple trade&hellip;</p>
+
+<p>And cash out with a potential fortune just a few weeks later!</p>
+
+<h3 id="gif16Trigger">Sometimes the Gains Happen<br class="break-page" />
+<br class="break-800" />
+<br class="break-639" />
+in a Matter<br class="break-400" />
+of Days&hellip;</h3>
+
+<p id="gif17Trigger">Take a look at what happened on February 8, 2017.</p>
+
+<p>That&rsquo;s when the Income Box pinpointed Zion Oil &amp; Gas as a buy.</p>
+<img class="image_center" id="gif16" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-Zion-01.png" />
+<p>Just five days later, on February 13&hellip;</p>
+<img class="image_center" id="gif17" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-Zion-02.png" />
+<p>Zion Oil &amp; Gas made an announcement that they had recently made<br class="break-page" />
+a HUGE oil discovery&hellip;</p>
+
+<p>Their market cap nearly DOUBLED&hellip;</p>
+
+<p>Giving you the chance to make $10,852 in just six days!</p>
+<img class="image_center" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-figures-Zion.png" />
+<p>Imagine if you have that kind of extra weekly income?</p>
+
+<p>That&rsquo;s enough for a new mortgage payment with just a week&rsquo;s worth of work.</p>
+
+<h3>Imagine Buying a Stock&hellip;<br class="break-800" />
+<br class="break-639" />
+and Never Having<br class="break-page" />
+to Worry About<br class="break-800" />
+if You Bought at the Wrong Time</h3>
+
+<p>Remember the last time you bought a stock that you thought was a good idea&hellip;</p>
+
+<p>You did your due diligence&hellip; and had every reason to believe the stock was gonna<br class="break-page" />
+go higher.</p>
+
+<p>And yet, shares dropped by 20% or more just a few days later.</p>
+
+<p>We&rsquo;ve all been through that. It&rsquo;s infuriating!</p>
+
+<p>Do you frequently wonder if you&rsquo;ve purchased stock at the wrong time?</p>
+
+<p>Well, now you no longer have to worry about that.</p>
+
+<p>My Income Box strategy helps you see when the right time to buy is.</p>
+
+<p>You don&rsquo;t have to worry about &ldquo;catching the top of the market&rdquo;&hellip;</p>
+
+<p>Or missing the big moves that happen out of the blue&hellip;</p>
+
+<p>Instead of constantly being beat by Wall Street insiders&hellip;</p>
+
+<p>The little guy finally has a chance to profit from these big one-day moves&hellip;</p>
+
+<p>Moves that have been making insiders rich for years&hellip;</p>
+
+<h3>Evidence From Harvard Law School Shows:<br class="break-400" />
+Hedge Funds Have<br class="break-400" />
+a Clear Advantage<br class="break-page" />
+Over<br class="break-400" />
+the Little Guy</h3>
+
+<p>You see, we&rsquo;ve all suspected that Wall Street was rigged against<br class="break-800" />
+everyday investors.</p>
+
+<p>But it&rsquo;s worse than we thought&hellip;</p>
+
+<p>I&rsquo;m sure you&rsquo;ve seen the stories about billionaire Stephen A. Cohen&hellip;</p>
+
+<p>Whose hedge fund made their notorious money on &ldquo;short term&rdquo; plays&hellip;</p>
+
+<p>Such as when Cohen&rsquo;s firm decided to sell their Dell shares shortly before<br class="break-page" />
+an earnings miss&hellip;</p>
+
+<p>Cohen probably knew something most investors didn&rsquo;t know&hellip;</p>
+
+<p>And was able to save his firm $1.7 million from a seemingly &ldquo;surprising&rdquo; earnings miss.</p>
+
+<p>Or I&rsquo;m sure you saw when billionaire Leon Cooperman made $4 million placing trades before Atlas Pipeline partners announced the sale of a natural gas plan for $682 million&hellip;</p>
+
+<p>Cooperman was one of Atlas&rsquo; biggest shareholder&hellip; and had frequent meetings<br class="break-page" />
+with executives&hellip;</p>
+
+<p>And was still able to profit from an event that no one was supposed to know was coming!</p>
+
+<p>Does that seem fair that Cooperman was able to spot this movement<br class="break-800" />
+before you?</p>
+
+<p>Absolutely not!</p>
+
+<p>And now&hellip; hedge funds are getting away with even MORE.</p>
+
+<p>A recent Harvard Law School report showed that hedge funds are now getting information from political lobbyists:</p>
+
+<p>&ldquo;By hiring lobbyists, hedge fund managers can gain access to information about ongoing or impending government actions.&rdquo;</p>
+
+<p>Harvard&rsquo;s research even included this tidbit:</p>
+
+<ul>
+  <li><em>As an example&hellip; consider the case of USG. Corp.<br class="break-page" />
+  <br class="break-800" />
+  A building-material company facing an estimated<br class="break-800" />
+  $5.5 billion<br class="break-page" />
+  in asbestos-related lawsuits.</em></li>
+  <li><em>On November 15, the company&rsquo;s stock was traded<br class="break-800" />
+  at 200% the normal volume&hellip; and delivered an abnormal return of 5%&hellip;<br class="break-page" />
+  Yet no company specific news was delivered that day.</em></li>
+  <li><em>The following day, the Senate majority leader announced a plan<br class="break-page" />
+  to create a $140 billion bailout fund to relieve companies such<br class="break-page" />
+  as USG of their asbestos liabilities.</em></li>
+</ul>
+
+<p>In conclusion, the Harvard research report stated:</p>
+
+<p>&ldquo;It appears the market reacted before the public announcement.&rdquo;</p>
+
+<p>Doesn&rsquo;t that make you sick?</p>
+
+<p>We all knew that hedge fund managers had the upper hand.</p>
+
+<p>But this is getting out of hand.</p>
+
+<h3>Today, the Rigged<br class="break-400" />
+Game Ends</h3>
+
+<p>Look, they&rsquo;re not going stop beating everyday folks like you to these plays&hellip;</p>
+
+<p>All you can do is beat them at their own game&hellip;</p>
+
+<p>By using the Income Box strategy.</p>
+
+<p>The only way to catch these big, unexpected moves is by following hedge funds and their activity in dark pools.</p>
+
+<p>Think about it&hellip;</p>
+
+<p>If there&rsquo;s no news about a specific company&hellip;</p>
+
+<p>And hedge funds are placing unusually large bets&hellip;</p>
+
+<p>It&rsquo;s very likely that they know something we don&rsquo;t, right?</p>
+
+<p>It&rsquo;s very likely they&rsquo;re trying to get IN FRONT of the market move.</p>
+
+<p>That&rsquo;s what the Income Box sets out to determine&hellip;</p>
+
+<p id="gif18Trigger">It uses a proprietary algorithm to track big front trades placed by hedge funds&hellip;</p>
+
+<p>In real time.</p>
+
+<p>So let me pull back the curtain and show you what&rsquo;s actually behind the Income<br class="break-page" />
+Box strategy&hellip;</p>
+<img class="image_center" id="gif18" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-Whiting-03.png" /> <img class="image_center" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-Black-Box_trade-initiated2.png" />
+<p>Take the Whiting Petroleum example from October 23&hellip;</p>
+
+<p>See that big spike?</p>
+
+<p>That&rsquo;s the algorithm picking up on big money flows&hellip;</p>
+
+<p>Put simply&hellip;</p>
+
+<p>It measures how much money is flowing in and out of the stock by observing the trades<br class="break-page" />
+in each stock.</p>
+
+<p>And when the algorithm &ldquo;spikes&rdquo;&hellip;</p>
+
+<p>That means hedge funds are potentially placing big money trades.</p>
+
+<p>In the case of Whiting Petroleum, for example, when the Income Box algorithm indicated<br class="break-page" />
+it was time to make a move&hellip;</p>
+
+<p>There was $1,977,075,240 flowing into that stock.</p>
+
+<p>To put that into perspective, that&rsquo;s 13 times HIGHER than the normal amount of money<br class="break-page" />
+that flows into that stock on a typical day.</p>
+
+<p>Here is the formula behind the spike:</p>
+<img class="image_center" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox_equation.png" />
+<p>It measures the volume-weighted average of accumulation and distribution over the<br class="break-page" />
+last 20 days.</p>
+
+<p>That&rsquo;s how it picks up when a front trade is happening.</p>
+
+<p>Don&rsquo;t let the complexity scare you&hellip;</p>
+
+<p>The tools behind the Income Box do all of the calculations.</p>
+
+<p>All you need to know is this.</p>
+
+<p><strong>When the Income Box sees big money flow to a certain degree&hellip;</strong></p>
+
+<p><strong>It means that hedge funds or someone in the know is trying to get IN FRONT of big market moves.</strong></p>
+
+<p>And its calculations will indicate that a front trade has been placed.</p>
+
+<p>Just like what happened in Whiting Petroleum&hellip;</p>
+<img class="image_center" id="gif14" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-Whiting-03.png" />
+<p>The algorithm would have picked up on investors making their move&hellip;</p>
+
+<p>And I would have known a full 15 days ahead of time to get in BEFORE<br class="break-page" />
+the profit explosion&hellip;</p>
+
+<p>Giving you the chance to make a quick 50% profit from investors trying to rig<br class="break-800" />
+the game!</p>
+
+<p>Isn&rsquo;t that incredible?</p>
+
+<p>The beauty of the Income Box strategy is that it calculates everything for you&hellip;</p>
+
+<p>You don&rsquo;t have to look at screens or those scary-looking indicators that don&rsquo;t work half<br class="break-page" />
+the time&hellip;</p>
+
+<p>You can use my Income Box strategy to determine when to make a trade&hellip;</p>
+
+<p>Because that means hedge funds are making heavy bets&hellip;</p>
+
+<p>Which can notify you about big stock market moves BEFORE they happen.</p>
+
+<p>Just take a look at what happened to Crown Baus Capital&hellip;</p>
+
+<h3 id="gif19Trigger">Imagine Making $34,950 in Less Than Two Weeks<br class="break-page" />
+From the Blockchain Craze&hellip; WITHOUT Buying<br class="break-page" />
+Any Risky Cryptos&hellip;</h3>
+
+<p>On January 3, there was no significant news regarding Crown Baus Capital.</p>
+
+<p>But the algorithm behind the Income Box said that hedge funds were taking<br class="break-page" />
+<br class="break-800" />
+a potential stake.</p>
+<img class="image_center" id="gif19" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-Crown-01.png" />
+<p>Simply put&hellip;</p>
+
+<p>All this unusual money flow indicated someone was trying to profit from a big,<br class="break-page" />
+unexpected move.</p>
+
+<p id="gif20Trigger">In fact, the money flow was 44 times higher during this time&hellip;</p>
+
+<p>On January 16&hellip;</p>
+
+<p>It was announced that Crown Baus acquired a military-grade cryptographic secure online communications system&hellip;</p>
+<img class="image_center" id="gif20" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-Crown-02.png" />
+<p>In order to revolutionize and bring military-grade, blockchain cybersecurity<br class="break-800" />
+to the<br class="break-page" />
+everyday consumer.</p>
+
+<p>Now did someone know that this announcement was coming?</p>
+
+<p>Of course they did!</p>
+
+<p>The Income Box picked up massive money flowing into the stock right before the announcement.</p>
+
+<p>And had you gotten in when the Income Box identified those front trades&hellip;</p>
+
+<p>You could have walked away with $34,950&hellip; in just two weeks!</p>
+<img class="image_center" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-figures-Crown.png" />
+<p>Do you now see how the Income Box strategy can help you level the<br class="break-800" />
+playing field?</p>
+
+<p>You have the chance to get in BEFORE big, unexpected news&hellip;</p>
+
+<p>And you can walk away with a fortune&hellip;</p>
+
+<p>In a matter of days!</p>
+
+<p>Just look at what happened in Recall Studios this past January.</p>
+
+<h3>Make $61,642 in Two Weeks&hellip;<br class="break-page" />
+<br class="break-800" />
+<br class="break-639" />
+From an &ldquo;Unknown Press Release&rdquo;<br class="break-page" />
+<br class="break-800" />
+<br class="break-639" />
+in the Tech Industry</h3>
+
+<p>On January 10, there was nothing going on in Recall Studios.</p>
+
+<p id="gif21Trigger">No press releases&hellip; Nothing&hellip;</p>
+
+<p id="gif22Trigger">But the algorithm behind the Income Box picked up unusual activity.</p>
+
+<p>The money flow was over 53 times higher.</p>
+<img class="image_center" id="gif21" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-Recall-01.png" />
+<p>The Income Box signaled potential hedge funds were making huge trades&hellip;</p>
+
+<p>Just two weeks later&hellip;</p>
+<img class="image_center" id="gif22" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-Recall-02.png" />
+<p>A press released was made that stated Recall Studios is launching a special product in the virtual reality sphere.</p>
+
+<p>The idea behind this product is to allow anyone, anywhere to create<br class="break-800" />
+their own immersive and interactive VR experience without the need<br class="break-800" />
+for specialized hardware.</p>
+
+<p>Imagine being able to create and interact in your own dream world?</p>
+
+<p>Investors went NUTS.</p>
+
+<p>And shares of Recall skyrocketed 1,133%&hellip;</p>
+
+<p>Enough for you to turn $5,000 into $61,642 in just TWO weeks!</p>
+<img class="image_center" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-figures-Recall.png" />
+<p>That&rsquo;s enough to buy a brand-new luxury car&hellip; from just ONE trade.</p>
+
+<p>Imagine having the car of your dreams&hellip;</p>
+
+<p>The type of car the valet wants to leave parked in front of the hotel&hellip;</p>
+
+<p>Just by making one simple trade&hellip;</p>
+
+<p>Just by purchasing regular shares!</p>
+
+<p>But it wasn&rsquo;t just Recall Studios&hellip;</p>
+
+<h3>Imagine Making $29,375<br class="break-page" />
+<br class="break-639" />
+From<br class="break-800" />
+an &ldquo;Unknown&rdquo; Texas Oil Patch&hellip;</h3>
+
+<p>On December 8, there was no news regarding Petrolia Energy Corp.&hellip;</p>
+
+<p id="gif23Trigger">But the Income Box picked up potential hedge fund activity&hellip;</p>
+
+<p>And that meant the stock was ready to explode.</p>
+
+<p>Check it out&hellip;</p>
+<img class="image_center" id="gif23" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-Petrolia-01.png" />
+<p id="gif24Trigger">On December 18&hellip;</p>
+
+<p>Petrolia announced that they had finalized a contract with Newbridge Securities Corp.,<br class="break-page" />
+who specializes in advising on mergers and acquisitions.</p>
+
+<p>Whoever was buying before the announcement would have made<br class="break-800" />
+out like a bandit&hellip;</p>
+<img class="image_center" id="gif24" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-Petrolia-02.png" />
+<p>Had you placed a simple bet of $5,000 on Petrolia&hellip;</p>
+
+<p>You could have made $29,375 on the announcement&hellip;</p>
+
+<p>In a little more than a week!</p>
+<img class="image_center" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-figures-Petrolia.png" />
+<p>Incredible right?</p>
+
+<p>And making this money would have been easy&hellip;</p>
+
+<p>Because all you had to do was wait for information the Income Box<br class="break-800" />
+picked up on&hellip;</p>
+
+<p>Place one simple trade&hellip;</p>
+
+<p>Then cash out a few days later!</p>
+
+<p>And like I mentioned before&hellip;</p>
+
+<p>There is no reason to risk your money in long-term plays&hellip;</p>
+
+<p>You&rsquo;re in&hellip;</p>
+
+<p>You&rsquo;re out&hellip;</p>
+
+<p>And you&rsquo;re paid!</p>
+
+<p id="gif25Trigger">The hedge funds have had the advantage for generations.</p>
+
+<p>But the rigged game changes today.</p>
+
+<h3>Because the Income Box Just Gave Me<br class="break-page" />
+<br class="break-639" />
+the Buy Signal&hellip; They&rsquo;re Trying to Beat<br class="break-639" />
+You Out &mdash;<br class="break-page" />
+Don&rsquo;t Let that Happen!</h3>
+
+<p>Take a look&hellip;</p>
+<img class="image_center" id="gif25" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-Anon.png" />
+<p>The Income Box just indicated movement on a company<br class="break-800" />
+in the discretionary sector&hellip;</p>
+
+<p>That means the system has detected a massive front trade.</p>
+
+<p>It&rsquo;s time you get in before everyone else.</p>
+
+<p>There&rsquo;s no time to waste&hellip;</p>
+
+<p>To help you get started&hellip;</p>
+
+<p>I&rsquo;ve created a secure link called <strong><em>How to Make $16,209 With Your First Income Box Trade.</em></strong></p>
+
+<p>Now, because of the nature of this trade&hellip;</p>
+
+<p>I can only put this into the hands of a very small group of people&hellip;</p>
+
+<p>That why I&rsquo;m limiting the number of readers to 1,000 today.</p>
+
+<p>With over 1.5 million readers&hellip; that boils down to 0.05% of Agora<br class="break-800" />
+Financial&rsquo;s readership.</p>
+
+<p>And after we reach that limit, I&rsquo;ll have to shut the page down.</p>
+
+<p>So here&rsquo;s what I am going to do&hellip;</p>
+
+<p>I&rsquo;d like to send you this email in the next five minutes.</p>
+
+<p>Then, by this time next week, you could be looking at a $16,209 payout.</p>
+
+<p>Of course, I don&rsquo;t have insider information on this company&hellip;</p>
+
+<p>So I can&rsquo;t tell you exactly what might happen&hellip;</p>
+
+<p>What kind of news they might release&hellip;</p>
+
+<p>Or when a big move will happen&hellip;</p>
+
+<p>All I know is that the Income Box picked up on potentially lucrative activity&hellip;</p>
+
+<p>Activity that suggests some big player is trying to get in before everyday folks like you.</p>
+
+<p>And that means some BIG announcement could happen as early as tomorrow.</p>
+
+<p>And if that happens&hellip;</p>
+
+<p>This opportunity will be gone forever&hellip;</p>
+
+<p>It will be too late for you to profit once you read it in the news.</p>
+
+<p>Which is why I would like to rush you this top-secret link right now.</p>
+
+<p>And there&rsquo;s more&hellip;</p>
+
+<p>Because this link is just the start of a revolutionary new investment protocol.</p>
+
+<h3>It&rsquo;s Time to Turn<br class="break-400" />
+the Tables&hellip; It&rsquo;s YOUR Turn<br class="break-page" />
+to Get in BEFORE the Big Moves</h3>
+
+<p>I&rsquo;m launching a new project designed for everyday folks just like you&hellip;</p>
+
+<p>I am calling it <strong><em>Zach&rsquo;s Weekly Squawk Box&hellip;</em></strong></p>
+
+<p>And to take part&hellip;</p>
+
+<p>You don&rsquo;t need to be a venture capitalist&hellip;</p>
+
+<p>You don&rsquo;t need to be an accredited investor&hellip;</p>
+
+<p>And you don&rsquo;t need a lot of money to get started with this strategy.</p>
+
+<p>Like I mentioned before&hellip;</p>
+
+<p>I wasn&rsquo;t born with a silver spoon in my mouth&hellip;</p>
+
+<p>So I want to open this up for hardworking Americans like you.</p>
+
+<p>Who might never have a chance to make money in the markets without the help of a strategy like my Income Box&hellip;</p>
+
+<p>As far as I know&hellip; it&rsquo;s the only strategy in the world that can help make you an average profit of $16,209 per week!</p>
+
+<p>And do it over and over again&hellip; without risking your money with<br class="break-800" />
+dangerous options.</p>
+
+<p>Today we are opening the door to 1,000 new members.</p>
+
+<p>Here&rsquo;s how this brand-new research service works&hellip;</p>
+
+<p>STEP 1: Every week&hellip; I will be using my Income Box to identify dark pool trades and unusual hedge fund activity across the U.S. market.</p>
+
+<p>STEP 2: As soon as my system indicates lucrative activity&hellip; I&rsquo;ll do my own analysis of the company&hellip; and I&rsquo;ll find the one that could hand you the<br class="break-800" />
+biggest gain.</p>
+
+<p>STEP 3: Finally, I&rsquo;ll send you an email&hellip; with exact instructions on how<br class="break-800" />
+to profit&hellip; the exact setup, what trade to make and when to take profits.</p>
+
+<p>We&rsquo;ll only make our research and recommendations available to members<br class="break-800" />
+of <strong><em>Zach&rsquo;s Weekly Squawk Box.</em></strong></p>
+
+<p>And to help you get started&hellip;</p>
+
+<p>I&rsquo;ll also send you a FREE handbook called <strong><em>The Income Box<br class="break-800" />
+Investing Handbook.</em></strong></p>
+
+<p>It&rsquo;s an easy 20-minute read. Inside, you&rsquo;ll find&hellip;</p>
+
+<ul class="checkmark">
+  <li>The #1 sign that Warren Buffett just made a big move&hellip;</li>
+  <li>How to reduce your risk by 75% with <strong><em>Zach&rsquo;s Weekly<br class="break-page" />
+  Squawk Box&hellip;</em></strong></li>
+  <li>The two brokers to NEVER use with the Income<br class="break-800" />
+  Box strategy&hellip;</li>
+</ul>
+
+<p>And I want to make it even easier for you&hellip;</p>
+
+<p>I went one step further&hellip; and right now I am putting the finishes touches<br class="break-800" />
+on a four-part video training series.</p>
+
+<p>In this series, I&rsquo;ll show&hellip;</p>
+
+<ul class="checkmark">
+  <li>How anyone can make these recommend trades<br class="break-800" />
+  in less than 10 minutes a week&hellip; even if you&rsquo;ve never invested before&hellip;</li>
+  <li>How you can get started for less than $100&hellip;</li>
+  <li>And how you can make money regardless of what the market is doing&hellip; even if there is a market crash&hellip;</li>
+</ul>
+
+<p>Of course, I&rsquo;ll also immediately send you the secure link I promised.</p>
+
+<p>It will have the subject line <strong><em>How to Make $16,209 With Your First Income<br class="break-800" />
+Box Trade.</em></strong></p>
+<img class="image_center email" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox_email.png" />
+<p>Remember, the Income Box just pinpointed an opportunity for this company.</p>
+
+<p>Do hedge funds know something big is about to be announced?</p>
+
+<p>It&rsquo;s time to jump in&hellip; before any potential news hits the public.</p>
+
+<p>This secure link will give you all of the details.</p>
+
+<p>Everything I&rsquo;ve mentioned so far is yours FREE&hellip; as soon as you join <strong><em>Zach&rsquo;s Weekly Squawk Box.</em></strong></p>
+
+<p>As far as I know, this is the only tool in the entire world that can track these big<br class="break-page" />
+market moves&hellip;</p>
+
+<p>The only tool that can help you get ahead of big moves&hellip; giving you<br class="break-800" />
+the chance to&hellip;</p>
+
+<h3>Make $14,711, $27,941<br class="break-400" />
+and $61,642<br class="break-page" />
+<br class="break-800" />
+<br class="break-639" />
+in a Matter<br class="break-400" />
+of DAYS</h3>
+
+<p>How much would that be worth to you?</p>
+
+<p>Before you answer, consider this&hellip;</p>
+
+<p>When I used to run a hedge fund&hellip;</p>
+
+<p>We used to charge something called the 2-and-20 fee structure&hellip;</p>
+
+<p>Meaning you are charged a 2% management fee&hellip;</p>
+
+<p>AND you give the fund 20% of your returns.</p>
+
+<p>Remember how I said the Income Box strategy proved it can yield average returns totaling $16,209 per week?</p>
+
+<p>That equates to $842,868 a year&hellip;</p>
+
+<p>With gains like that&hellip;</p>
+
+<p>Your fees would easily be over $168,000.</p>
+
+<p>And to be fair&hellip;</p>
+
+<p>With returns like that&hellip;</p>
+
+<p>I think that&rsquo;s worth every penny&hellip;</p>
+
+<p>But don&rsquo;t worry.</p>
+
+<p>The special membership to <strong><em>Zach&rsquo;s Weekly Squawk Box</em></strong> won&rsquo;t cost anywhere<br class="break-page" />
+near $168,000.</p>
+
+<p>It won&rsquo;t even cost $50,000.</p>
+
+<p>Not even $10,000&hellip;</p>
+
+<p>Because I&rsquo;m not running a hedge fund for rich people anymore. I just want to help level the playing field.</p>
+
+<p>I&rsquo;ll give you all of the details on the offer in a just a moment&hellip;</p>
+
+<p>But first, I&rsquo;d understand you might have some questions about our strategy.</p>
+
+<p>I&rsquo;ve tried to compile the most common ones. Let me answer them right now.</p>
+
+<h4>Question: Is there some kind of trick<br class="break-400" />
+in the math on these positions? Do you really not use options, which other services love to use?</h4>
+
+<h4 class="green">Answer: No. The Income Box does<br class="break-400" />
+NOT use options, futures<br class="break-page" />
+or fancy derivatives&hellip;</h4>
+
+<p>You see&hellip;</p>
+
+<p>A lot of trading services these days like to tout big gains&hellip;</p>
+
+<p>But the only way they can achieve those gains is by purchasing options.</p>
+
+<p>Now, if you&rsquo;ve been following me for a while&hellip;</p>
+
+<p>You know I am not a fan of buying options&hellip;</p>
+
+<p>After all, research shows that most options expire worthless.</p>
+
+<p>In other words, most people who are buying options are losing 100% of<br class="break-800" />
+their investment.</p>
+
+<p>In fact, with options you can lose all your money in a DAY&hellip;</p>
+
+<p>And no one can sleep easy knowing that their investment can be completely worthless with a small drop in stock price&hellip;</p>
+
+<p>That&rsquo;s why the Income Box is so perfect for folks who don&rsquo;t want to risk their hard-earned money in complicated options or derivatives&hellip;</p>
+
+<p>You see&hellip;</p>
+
+<p>With my strategy, those big gains are possible simply by purchasing<br class="break-800" />
+regular stock.</p>
+
+<p>Yes, $5,000 turned into $27,941 in 21 days&hellip;</p>
+
+<p>$44,850 in 13 days&hellip;</p>
+
+<p>And $61,642 in 14 days&hellip; just with regular shares!</p>
+
+<p>All you have to do is wait for the Income Box to indicate a big move&hellip;</p>
+
+<p>Decide to place one simple trade&hellip;</p>
+
+<p>And then cash out with a potential fortune!</p>
+
+<p>But if this strategy is so profitable, you might be wondering&hellip;</p>
+
+<h4>Question: If this system is so profitable&hellip; why don&rsquo;t you keep<br class="break-page" />
+<br class="break-400" />
+it for yourself?</h4>
+
+<h4 class="green">Answer: I already made $8 million<br class="break-400" />
+using this strategy.<br class="break-800" />
+Now I want<br class="break-page" />
+to share that secret.</h4>
+
+<p>I&rsquo;ve already made a more than enough money to support myself using<br class="break-800" />
+this strategy&hellip;</p>
+
+<p>And now I want to help ordinary folks who don&rsquo;t have access to the wealth-building strategies of the global elite.</p>
+
+<p>It always irked me that the machine was rigged to make the rich get richer.</p>
+
+<p>And after my kids were born (I&rsquo;ve got seven!)&hellip; I saw what life was really about.</p>
+
+<p>Being happy.</p>
+
+<p>Enjoying time with my family.</p>
+
+<p>And doing something more fulfilling than helping the rich get richer.</p>
+
+<p>That&rsquo;s why I&rsquo;m on a mission to make the Income Box available to everyday folks like you.</p>
+
+<p>Imagine&hellip; what would you do with an extra $16,209 a week?</p>
+
+<p>Maybe you would buy a new vacation home in Florida&hellip;</p>
+
+<p>Or buy the fishing boat you&rsquo;ve always wanted&hellip;</p>
+
+<p>Maybe you&rsquo;d just pay off your debts and have enough to buy the grandkids nicer presents&hellip;</p>
+
+<p>Whatever your goal is&hellip;</p>
+
+<p>It&rsquo;s possible with the help of Zach&rsquo;s Weekly Squawk Box.</p>
+
+<h4>Question: Do I have to watch my computer screen or wait<br class="break-800" />
+by the<br class="break-400" />
+Income Box for the trade recommendation all day?</h4>
+
+<h4 class="green">Answer: No. This strategy is meant<br class="break-400" />
+for people who are<br class="break-800" />
+&ldquo;on the go.&rdquo;</h4>
+
+<p>Like I&rsquo;ve said many times&hellip;</p>
+
+<p>This strategy is built for ease.</p>
+
+<p>Since we are always on our phones&hellip;</p>
+
+<p>And not necessarily at a computer&hellip;</p>
+
+<p>I&rsquo;ll even send you a convenient text telling you a new recommendation has hit your inbox.</p>
+
+<p>With current technology, placing a trade on your smartphone or tablet has never been easier.</p>
+
+<p>And that means you can trade whether you are at the grocery store or gardening in the backyard!</p>
+
+<p>So here is why I&rsquo;d like to do something a little different&hellip;</p>
+
+<p>If you&rsquo;re one of the lucky 1,000 to join me today&hellip; I&rsquo;ll also send you three special gifts.</p>
+
+<h3>Bonus #1: Send Me Your Phone Number&hellip;<br class="break-page" />
+and I Will Call You Every Week</h3>
+
+<p>One thing I hate about newsletters is that so-called &ldquo;gurus&rdquo; don&rsquo;t have enough contact with their members.</p>
+
+<p>So I would like to do something special&hellip;</p>
+
+<p>And host an hourlong call every week.</p>
+
+<p>You see, I want to chat every time the Income Box indicates a new trade alert&hellip;</p>
+
+<p>Each week you&rsquo;ll receive my newest recommendation report, and during the call we&rsquo;ll go over the new pick&hellip; and all of the latest market news you need<br class="break-800" />
+to know&hellip;</p>
+
+<p>Giving you a FULL rundown of the opportunity we are taking advantage of.</p>
+
+<p>I&rsquo;ll be discussing the most recent trade recommendations and analysis from earlier that morning, on top of answering your most pressing questions,<br class="break-800" />
+in LIVE calls.</p>
+
+<p>This one&rsquo;s a real game changer. And it&rsquo;s exactly the same type of &ldquo;inside&rdquo; insight that professional traders use to make big gains.</p>
+
+<p>The same kind of service that some people pay $1,300 PER HOUR for&hellip;</p>
+
+<p>I&rsquo;ll send you a link to a webinar where we can chat&hellip;</p>
+
+<p>And you can ask LIVE questions in the chat box.</p>
+
+<p>That&rsquo;s correct.</p>
+
+<p>No other research service gets you an up-close-and-personal webinar like this!</p>
+
+<p>Of course, other members will be on the webinar as well.</p>
+
+<p>But your questions pop up LIVE on the call.</p>
+
+<p>And I can answer them immediately!</p>
+
+<p>Now we can&rsquo;t give any personalized investment advice, but pretty much every other pressing market concern is up for grabs!</p>
+
+<p>My clients at the hedge fund would have had to pay a massive amount for these phone calls&hellip;</p>
+
+<p>And similar services cost up to $1,300 PER CALL&hellip;</p>
+
+<p>But as a charter member of <strong><em>Zach&rsquo;s Weekly Squawk Box&hellip;</em></strong></p>
+
+<p>You&rsquo;ll get these weekly calls absolutely free.</p>
+
+<p>And I&rsquo;ll give you the notice when the Income Box alerts me<br class="break-800" />
+of a trade opportunity.</p>
+
+<h3>Bonus #2: I&rsquo;ll FedEx You Your Own<br class="break-page" />
+PERSONAL Black Box</h3>
+<img class="image_center box" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox_bbox2.png" />
+<p>I told you I made $8 million from the black box<br class="break-800" />
+when I worked at the hedge fund&hellip;</p>
+
+<p>And now it&rsquo;s your turn at the same<br class="break-800" />
+life-changing wealth.</p>
+
+<p>That&rsquo;s why I&rsquo;ll be sending you your very<br class="break-800" />
+own Black Box by certified mail.</p>
+
+<p>It will come in a discreet manila package.</p>
+
+<p>Of course, this is not an automated system that places trades for you&hellip;</p>
+
+<p>But this box will allow you to listen for my analysis after my recommendations hit your inbox.</p>
+
+<p>And I recommend keeping it in a safe space&hellip;</p>
+
+<p>Because the ideas that come out of this box supplement my research and could give you the chance to <strong>earn $16,209 every seven days!</strong></p>
+
+<p>Of course, if you prefer, you can just read my alerts.</p>
+
+<p>Which brings me to a very important point!</p>
+
+<h3>Bonus #3: I&rsquo;ll Send You a Brand-New Samsung Tablet, Absolutely FREE</h3>
+<img class="tablet image_center" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-Black-Box_tablet.png" />
+<p>The reason is simple&hellip;</p>
+
+<p>I&rsquo;ve been saying how easy it is to use <strong><em>Zach&rsquo;s Weekly<br class="break-page" />
+Squawk Box&hellip;</em></strong></p>
+
+<p>I&rsquo;ve also said how you can use this strategy ANYWHERE.</p>
+
+<p>From the grocery store&hellip;</p>
+
+<p>To the living room&hellip;</p>
+
+<p>Even your children&rsquo;s soccer games.</p>
+
+<p>That&rsquo;s why I purchased 1,000 portable trading tablets to GIVE AWAY today&hellip;</p>
+
+<p>Because of a special deal I worked out with my publisher&hellip;</p>
+
+<p>Each member who joins me today will receive a Samsung tablet.</p>
+
+<p>This way, you always have a mobile option&hellip;</p>
+
+<p>And can enjoy the freedom that <strong><em>Zach&rsquo;s Weekly Squawk Box</em></strong> gives you!</p>
+
+<p>These are brand-new and factory-sealed models&hellip;</p>
+
+<p>With the QHD screen that Samsung is famous for.</p>
+
+<p>Heck, you&rsquo;ll spend more time watching high-definition movies on this thing than reading<br class="break-page" />
+my research!</p>
+
+<p>And this gift is yours to keep.</p>
+
+<p>You&rsquo;re free to do whatever you like with it!</p>
+
+<p>So to recap&hellip;</p>
+
+<h3>Here Is Everything<br class="break-400" />
+You Will Get<br class="break-800" />
+if You&rsquo;re Lucky Enough to Get in<br class="break-800" />
+<br class="break-400" />
+on This Project&hellip;</h3>
+<img class="image_center changes pop" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB_BlackBox_0318-VSL-Famshot2.png" />
+<ul class="checkmark">
+  <li><strong>A New Trade Recommendation Every Week &mdash;</strong> My Income Box<br class="break-page" />
+  is always scanning the market for hedge fund activity&hellip; and every week, I&rsquo;ll send you an email with my most<br class="break-639" />
+  pressing research</li>
+  <li><strong>My Private Weekly Phone Call &mdash;</strong> Every week, I&rsquo;ll send<br class="break-639" />
+  you a link to a webinar where I will give you the full rundown on our opportunity for the week&hellip; where you can ask me live questions that I am free to answer</li>
+  <li><strong>FREE Secure Link</strong> with the subject line <strong><em>How to Make $16,209 From Your First Income Box Trade</em></strong></li>
+  <li><strong>FREE Guide <em>The Income Box Investing Handbook</em></strong></li>
+  <li><strong>FREE Four-Part Video Training Series</strong></li>
+  <li><strong>A Free State-of-the-Art Samsung Trading Tablet</strong></li>
+  <li><strong>Your Own Personal Black Box Speaker</strong></li>
+  <li><strong>Urgent Profit Taking Alerts &mdash;</strong>When it&rsquo;s time to cash out<br class="break-639" />
+  on our recommendations, I&rsquo;ll send you an urgent email giving you the exact steps you should take. It&rsquo;s the easiest strategy<br class="break-639" />
+  I know</li>
+  <li><strong>Regular Model Portfolio Updates &mdash;</strong> Every Monday,<br class="break-800" />
+  I&rsquo;ll send through an update and my outlook on the open positions.<br class="break-639" />
+  I&rsquo;ll also let you know if I think there is any action to take.</li>
+</ul>
+
+<p>Remember&hellip;</p>
+
+<p>For access to this kind of information&hellip;</p>
+
+<p>My former clients happily forked over a 2% management fee&hellip;</p>
+
+<p>And gave up 20% of their gains to investment fees.</p>
+
+<p>Those fees can easily get into <em>hundreds of thousands</em> of dollars on the low end.</p>
+
+<p>And even if you don&rsquo;t invest&hellip;</p>
+
+<p>Some people will pay $1,300 for a SINGLE phone call asking<br class="break-800" />
+for recommendations.</p>
+
+<p>A single call each month would cost over $15,600 a year!</p>
+
+<p>But for folks like you&hellip;</p>
+
+<p>You won&rsquo;t pay anywhere near those kind of fees or prices&hellip;</p>
+
+<p>Since this is the first time ever I&rsquo;m making the Income Box available to everyday folks, I&rsquo;ve managed to negotiate a very special offer with my publisher&hellip;</p>
+
+<p>Today only, charter memberships costs just $3,000.</p>
+
+<p>For my weekly market analysis, a WEEKLY call, trade recommendation alerts, bonus reports, the state-of-the-art tablet and everything else I mentioned.</p>
+
+<p>Since we are opening up the door to 1,000 members today&hellip;</p>
+
+<p>And only 0.05% of Agora&rsquo;s readership will get in&hellip;</p>
+
+<p>I guarantee in the next few hours, spots will fill up fast.</p>
+
+<p>And consider this&hellip;</p>
+
+<h3>By Next Week You Could Have Enough Money to Pay for Your Entire Subscription</h3>
+
+<p>Like I showed you earlier&hellip;</p>
+
+<p>Starting with just $500&hellip;</p>
+
+<p>You could have placed a bet on Recall Studios&hellip;</p>
+
+<p>And walked away with $6,164 in just two weeks!</p>
+<img class="image_center" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-Recall-03.png" />
+<p>Or you could have placed a $500 bet on U.S. Nuclear Corp.&hellip; and walked away<br class="break-page" />
+with $4,485.</p>
+<img class="image_center" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-Nuclear-03.png" />
+<p>Or $3,495 from Crown Baus Capital.</p>
+<img class="image_center" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB-BlackBox-Crown-03.png" />
+<p>In each one of those trades&hellip;</p>
+
+<p>A single $500 bet would have made you enough money to pay for your<br class="break-800" />
+annual fee.</p>
+
+<h3>And Remember&hellip; the Income Box<br class="break-800" />
+Has<br class="break-639" />
+the Potential to Hand You an Average Profit of $16,209 Every WEEK</h3>
+
+<p>$3,000 is an incredible deal.</p>
+
+<p>And this membership could be paid for by next week!</p>
+
+<p>But I understand you&rsquo;re not familiar with the Income Box strategy&hellip;</p>
+
+<p>After all, it&rsquo;s inspired by a system only hedge funds had access to.</p>
+
+<p>So for that reason&hellip; to make this a no-brainer for you&hellip;</p>
+
+<p><strong>I am going to lower the cost of admission to $2,000.</strong></p>
+
+<p>That&rsquo;s a full $1,000 off the already incredible publishing price of $3,000.</p>
+
+<p>I&rsquo;d also like to give you a special profit guarantee.</p>
+
+<p>You see&hellip; I&rsquo;ve shown you the power of the Income Box&hellip;</p>
+
+<p>And how easy it is to use&hellip;</p>
+
+<p>I want to make sure you are completely satisfied with my strategy.</p>
+
+<p>Right now, I am going to say this&hellip;</p>
+
+<h3>If You Don&rsquo;t Get the Opportunity to Double your Money on My Recommendations<br class="break-639" />
+at Least 10 Times Over the Next Year&hellip;<br class="break-639" />
+<u>I&rsquo;ll Send You a Check Worth $3,000</u></h3>
+
+<p>That&rsquo;s correct.</p>
+
+<p>If my recommendations don&rsquo;t deliver the opportunity to double your money<br class="break-800" />
+at least 10 times this upcoming year&hellip;</p>
+
+<p>Simply call our Baltimore-based customer care team&hellip;</p>
+
+<p>And they will give you a $3,000 credit you can use towards another year<br class="break-800" />
+of service.</p>
+
+<p>That&rsquo;s how confident I am in the Income Box.</p>
+
+<p>It&rsquo;s the only way to catch big market moves that only hedge funds could possibly<br class="break-page" />
+know about.</p>
+
+<p>Like I showed you today&hellip; you could have earned&hellip;</p>
+
+<ul class="checkmark">
+  <li>$44,850 on U.S. Nuclear Corp. in 13 days</li>
+  <li>$29,375 on Petrolia Energy in seven days</li>
+  <li>$7,484 on Whiting Petroleum in 11 days</li>
+  <li>$10,852 on Zion Oil &amp; Gas in six days</li>
+  <li>$27,941 on Weed Inc. in 21 days</li>
+  <li>$16,408 on Evio Inc. in seven days</li>
+  <li>$8,167 on Novavax in one day</li>
+</ul>
+
+<p>You&rsquo;ve seen the charts&hellip;</p>
+
+<p>You&rsquo;ve seen the data&hellip;</p>
+
+<p>The proof that hedge funds are constantly beating you to the big<br class="break-800" />
+market moves&hellip;</p>
+
+<p>And I&rsquo;ve shown you that the Income Box is the only way to help you turn the tables on that rigged game.</p>
+
+<p>I&rsquo;ve lowered the price of admission to $2,000, which is only available through this<br class="break-page" />
+special offer.</p>
+
+<p>AND I&rsquo;ve added a profit guarantee that covers $3,000 as insurance.</p>
+
+<p>Now it&rsquo;s time for a decision.</p>
+
+<p>You could become one of the lucky 1,000 new members who will join <strong><em>Zach&rsquo;s Weekly Squawk Box.</em></strong></p>
+
+<p>Once the 1,000-member cap is reached, we will have to shut down this offer.</p>
+
+<p>I expect these spots to fill up fast&hellip;</p>
+
+<p>Because with over 1.5 million readers&hellip;</p>
+
+<p>We are only allowing 0.05% of our readers in.</p>
+
+<p>So you better act fast&hellip; while spots are still available.</p>
+
+<p>And keep in mind, we&rsquo;ve spent $265,000 on state-of-the-art tablets&hellip; here&rsquo;s<br class="break-800" />
+a picture<br class="break-page" />
+of the invoice.</p>
+<img class="image_center invoice" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB_BlackBox_invoice2.png" />
+<p>We&rsquo;ve also spent $1.2 million investing in this project.</p>
+
+<p>The original squawk box made me $8 million&hellip; so it was well worth<br class="break-800" />
+the investment&hellip;</p>
+
+<p>But as you can see, there is a lot of money wrapped up in this project.</p>
+
+<p>For that reason, we simply can&rsquo;t allow refunds on this project.</p>
+
+<p>If we did, people would get the tablet&hellip; get the opportunity the Income Box picked up&hellip;<br class="break-page" />
+then cancel.</p>
+
+<p>And that would not be fair to all of the other serious readers.</p>
+
+<p>I realize that will probably ruffle the feathers of most people.</p>
+
+<p>But I have a feeling you are NOT &ldquo;most people.&rdquo;</p>
+
+<p>The fact that you&rsquo;ve stuck with me this far tells me you&rsquo;re serious about taking your finances to the next level.</p>
+
+<p>It tells me, unlike most people&hellip;</p>
+
+<p>You are NOT content with table scraps&hellip;</p>
+
+<p>With gains of 5&ndash;10% a year&hellip;</p>
+
+<p>And that you&rsquo;re tired of always being left out of the BIG, life-changing moves that always seem to happen out of the blue.</p>
+
+<h3 class="upsell_yes continue">
+      
+
+    <a class="advancedEffortLinkClass" href="#"   >SUBSCRIBE NOW!</a>
+
+  
+
+    </h3>
+
+
+
+
+<h3 class="upsell_no">
+       
+
+    <a class="advancedEffortLinkClass" href="#"  >NO, I WANT TO FORFEIT MY CHANCE TO UPGRADE</a>
+
+    </h3>
+
+
+
+
+
+
+
+                        <!-- END Upsell Buttons: Delete this section when copying page to confirmation -->
+                        <h3 class="upsell_alert">(I know that I may never see this offer again.)</h3>
+                        <div class="autorenew">
+                            <p><strong>Billing Terms:</strong> Once you accept your Weekly Squawk Box subscription, your credit card will be billed $2,000 immediately for a full one year subscription. After your first year, your subscription will automatically renew at the same rate. There are no refunds available on this offer, but you can call any time to cancel your automatic renewals. </p>
+                        </div>
+
+<p>If I&rsquo;m right and you are still with me&hellip;</p>
+
+<p>I want you to get started immediately.</p>
+
+<p>Because the Income Box just sent me an alert.</p>
+
+<p>That means huge front trades are being made&hellip;</p>
+
+<p>And a big payday could be right around the corner.</p>
+
+<p>It could happen as early as tomorrow.</p>
+
+<p>The only question is&hellip;</p>
+
+<p>Will you get in before the big move&hellip;</p>
+
+<p>Or will you pass this up and let someone else profit in your place?</p>
+
+<p>Now&rsquo;s the time to level the playing field.</p>
+
+<p>You finally have a shot at making $6,641, $14,711, even $44,850 in a matter<br class="break-800" />
+of days!</p>
+
+<p>And do it over and over again.</p>
+
+<p>To recap&hellip; you&rsquo;ll get an instant secure email with the subject line<br class="break-639" />
+<strong><em>How to Make $16,209 From Your First Income Box Trade</em></strong>&hellip; showing you how to take advantage of the latest opportunity that flashed on my screen.</p>
+
+<p>A yearlong research service&hellip;</p>
+
+<p>With weekly alerts, calls and model portfolio updates.</p>
+
+<p>And remember, this is the only service where you can ask a me live questions each week that I can personally respond to&hellip;</p>
+
+<p>And a brand-new, state-of-the-art Samsung tablet to trade wherever you please!</p>
+
+<p>And remember, if you don&rsquo;t double your money 10 times following my recommendations<br class="break-page" />
+in the next year&hellip; I owe you $3,000.</p>
+
+<p>That&rsquo;s my personal guarantee.</p>
+
+<p>To get started&hellip; simply click the &ldquo;Subscribe Now&rdquo; button that you see below<br class="break-800" />
+this letter.</p>
+
+<p>Hitting this button does not obligate you to anything.</p>
+
+<p>You&rsquo;ll just be directed to another page, where you can review all of the details<br class="break-800" />
+of this<br class="break-page" />
+special offer.</p>
+<img class="image_center" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/WSB/WSB_Black-Box_0318/WSB_BlackBox_0318-VSL-Famshot2.png" />
+<h3 class="upsell_yes continue">
+      
+
+    <a class="advancedEffortLinkClass" href="#"  >SUBSCRIBE NOW!</a>
+
+
+
+    </h3>
+
+
+
+<h3 class="upsell_no">
+       
+
+    <a class="advancedEffortLinkClass" href="#"  >NO, I WANT TO FORFEIT MY CHANCE TO UPGRADE</a>
+
+    </h3>
+
+
+
+
+
+
+
+
+                        <!-- END Upsell Buttons: Delete this section when copying page to confirmation -->
+                        <h3 class="upsell_alert">(I know that I may never see this offer again.)</h3>
+                        <div class="autorenew">
+                            <p><strong>Billing Terms:</strong> Once you accept your Weekly Squawk Box subscription, your credit card will be billed $2,000 immediately for a full one year subscription. After your first year, your subscription will automatically renew at the same rate. There are no refunds available on this offer, but you can call any time to cancel your automatic renewals. </p>
+                        </div>
+            <!--====  End Body Section  ====-->
+<img class="signature" src="https://d13p2xj50zkyqm.cloudfront.net/promos/images/signatures/ZacharyScheidt.png" />
+<p>Zach Scheidt<br />
+March 2018</p>
+<!--====  End Body Section  ====--></div>
+<!-- / row -->
+
+
+
+      <div class="clear" style="padding-bottom:1%;"></div>
+    </div>
+
+</div></body></html>
