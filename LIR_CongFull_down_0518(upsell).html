@@ -1,0 +1,383 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+
+<html><head>
+
+    <meta http-equiv="PRAGMA" content="NO-CACHE" />
+    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE" />
+    <meta http-equiv="EXPIRES" content="NOW" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://d13p2xj50zkyqm.cloudfront.net/scripts/test/orderformtest.css">
+
+
+    <style>
+        h4 {
+              font-family: Arial !important;
+            font-size: 2.2em;
+            text-align: center;
+            font-weight: 600;
+            padding-top: 1em;
+        }
+        h3{
+            font-family: Arial !important;
+        }
+
+        h2 {
+            margin-bottom: 1em;
+        }
+
+         body {
+      background-color: #CCCCCC;
+      font-family: Arial !important;
+    }
+        div.formwrapper {
+            margin-top: 0;
+            box-shadow: none;
+            border: none;
+            border-radius: 0;
+            max-width: 75em;
+            width: 100%;
+            background: none;
+        }
+
+        .top {
+            width: 100%;
+        }
+
+        .logo {
+            width: 30em;
+            margin-top: 4em;
+            display: inline-block;
+            float: left;
+        }
+
+        .timer {
+            width: 25em;
+            margin: 1% 1% 1% 10%;
+            display: inline-block;
+        }
+
+        .number {
+            width: 25em;
+            margin: 2% 1%;
+            display: inline-block;
+            float: right;
+        }
+
+        .clockbutton {
+            background-color: #333;
+            height: 30px;
+            width: 30px;
+            border: thin solid #000;
+            padding: 7px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+        }
+
+        div.background {
+            background-color: #FFF;
+            margin-top: 8em;
+       margin-bottom: 25px;
+        }
+
+        div.testimonial {
+            clear: both;
+        }
+
+        div.audio {
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+            background-color: #FFF;
+            padding-top: 1%;
+        }
+
+        .order_content {
+            background: #FFF;
+        }
+
+        #af_form_wrapper {
+            margin: 0 0 1% 0;
+            border-radius: 0;
+        }
+
+        .listright {
+            border: thin solid black;
+            display: inline-block;
+            width: 45%;
+            float: right;
+            margin: 1% 2%;
+            padding: 1%;
+            -webkit-box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+            -moz-box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+            box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+        }
+
+        .listright ul {
+            margin: 1.25em 1em 1.25em 2.5em;
+        }
+
+        .listleft {
+            border: thin solid black;
+            display: inline-block;
+            width: 45%;
+            margin: 1% 2%;
+            padding: 1%;
+            -webkit-box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+            -moz-box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+            box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+        }
+
+        .listleft ul {
+            margin: 1.25em 1em 1.25em 2.5em;
+        }
+
+        .listleft li {
+            margin-top: 2.37em;
+        }
+
+        .list {
+            border: thin solid black;
+            -webkit-box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+            -moz-box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+            box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+            margin: 5% 5%;
+        }
+
+        .center {
+            text-align: center;
+
+
+            font-size: 1.7em;
+            margin:2% 10%;
+            font-weight: bold;
+            font-family: Georgia;
+        }
+        .test {
+                width: 100%;
+                background: #FFF;
+            }
+
+        .header {
+            display: block;
+            width: 80%;
+            margin: 2em auto;
+        }
+
+        .header h4 {
+            text-align: left;
+            float: right;
+            margin-top: 1.5em;
+            margin-left: 0;
+        }
+
+        h1 {
+            margin: 0 auto;
+        }
+
+        .deck {
+            text-align: center;
+            color: #af0a0a;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .indent{
+          padding-left: 25px;
+          padding-right: 25px;
+        }
+        h3.wait{
+          color:red;
+          font-size: 4rem;
+          padding-top: 25px;
+          margin:0px!important;
+        }
+        /*----------FAQ--------*/
+
+        .moveSection {
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+
+        .faqButton {
+            width: 5%;
+            float: left;
+            margin: 1em;
+            margin-top: -1em;
+        }
+
+        .questionSect:hover {
+            cursor: pointer;
+        }
+
+        .moveSection {
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+
+        .answerSect {
+            display: none;
+            margin: 5em;
+            background-color: #ededed;
+            border: thin solid #202e61;
+            -webkit-box-shadow: inset 1px 1px 24px 0px rgba(50, 50, 50, 0.53);
+            -moz-box-shadow: inset 1px 1px 24px 0px rgba(50, 50, 50, 0.53);
+            box-shadow: inset 1px 1px 24px 0px rgba(50, 50, 50, 0.53);
+        }
+
+        .question {
+            margin-left: 2em;
+        }
+
+        .question p {
+            font-size: 2em;
+        }
+
+        .closeButton {
+            color: #fff;
+            width: 15%;
+            font-size: 1.5em;
+            margin: 0 auto;
+            background-color: darkred;
+            cursor: pointer;
+            padding: 1%
+        }
+        @media screen and (max-width:800px) {
+          .logo {
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 4em;
+            margin-bottom: -50px;
+            display: block;
+            float: none;
+          }
+        }
+    </style>
+
+        
+        <script src="https://images.web-purchases.com/jQuery/jquery.min.js" type="text/javascript"></script>
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+            <title>Lifetime Income Report</title>
+</head><body>
+<style type="text/css">
+    .warning-message {
+        position: fixed;
+        top: 0px;
+        left: 10px;
+        margin: 0px;
+        height: 100%;
+        width: 100%;
+        background-color: #ffffff;
+    }
+</style>
+
+<div id='mainContainer' class='container'>
+<!-- dependent name: trackerVars -->
+
+
+<script>
+var imprint = 'SFP';
+</script><!-- Order JS Link -->
+    <div class="formwrapper">
+        <div class="top">
+<!-- SFF NF Logo -->
+      
+<!-- SFF NF Logo -->
+        </div>
+        <div class="background">
+<br>
+<h3>Okay, so you don&rsquo;t want to become a Lifetime Income Report VIP member&hellip; </h3>
+<h2>&hellip; But How About We Give You a FREE Extra Year?</h2>
+
+<p>Maybe you&rsquo;re not ready to become a VIP member yet.</p>
+<p>I get it.</p>
+<p>$247 can be a lot of money for some people.</p>
+<p>But Zach&rsquo;s research and recommendations are already helping many of his readers make thousands of dollars in extra retirement income.</p>
+<p>So we&rsquo;d like to offer you a second year for an incredible 60% discount.</p>
+<p>That means that instead of paying the annual renewal price of $99 per year for Lifetime Income Report&hellip;</p>
+<p>We&rsquo;ll add a second year of service onto your subscription today for just $39 (our LARGEST savings for new members life you.)</p>
+<h3>***Act in the next 3 minutes, and we&rsquo;ll throw in an additional year&hellip; completely FREE!</h3>
+<p>If, for any reason you don't feel like Zach's research is helping you generate extra income, no problem... simply give us a call to cancel and you'll receive a full, prompt refund.</p>
+<p>Simply click the YES, ADD A SECOND YEAR FOR 60% OFF below and we&rsquo;ll charge you another $39 for a SECOND full year of Lifetime Income Report&hellip;and give you an EXTRA year free of charge.</p>
+ 
+
+
+
+
+                        <!-- END Enter Order Upsell / Confirmation Copy Here -->
+
+                        <!-- START Upsell Buttons: Delete this section when copying page to confirmation -->
+
+
+
+
+
+
+
+
+
+
+ <h3 class="upsell_no">
+       
+
+    <a class="advancedEffortLinkClass" href="#"  >YES, ADD A SECOND YEAR 
+FOR 60% OFF and a FREE THIRD YEAR</a>
+
+
+    </h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <h3 class="upsell_no">
+       
+
+    <a class="advancedEffortLinkClass" href="#"   >No thanks, I don’t want to save money and get a FREE year </a>
+
+
+    </h3>
+
+
+
+
+
+                        <!-- END Upsell Buttons: Delete this section when copying page to confirmation -->
+                        <h3 class="upsell_alert">(I know that I may never see this offer again.)</h3>
+                        <div class="autorenew">
+                            <p><strong>Billing Terms:</strong> When you accept this offer today, we’ll charge you an additional $39 for a second year of Lifetime Income Report. Your third year will be FREE. Then, when your subscription is about to expire, we will automatically bill your card for another term at the same rate. </p>
+                        </div>
+            <!--====  End Body Section  ====-->
+
+      <div class="clear" style="padding-bottom:1%;"></div>
+    </div>
+ 
+</div></body></html>
