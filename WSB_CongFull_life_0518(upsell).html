@@ -1,0 +1,590 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+
+<html><head>
+
+    <meta http-equiv="PRAGMA" content="NO-CACHE" />
+    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE" />
+    <meta http-equiv="EXPIRES" content="NOW" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://d13p2xj50zkyqm.cloudfront.net/scripts/test/orderformtest.css">
+
+
+    <style>
+        h4 {
+              font-family: Arial !important;
+            font-size: 2.2em;
+            text-align: center;
+            font-weight: 600;
+            padding-top: 1em;
+        }
+        h3{
+            font-family: Arial !important;
+        }
+
+        h2 {
+            margin-bottom: 1em;
+        }
+
+         body {
+      background-color: #CCCCCC;
+      font-family: Arial !important;
+    }
+        div.formwrapper {
+            margin-top: 0;
+            box-shadow: none;
+            border: none;
+            border-radius: 0;
+            max-width: 75em;
+            width: 100%;
+            background: none;
+        }
+
+        .top {
+            width: 100%;
+        }
+
+        .logo {
+            width: 30em;
+            margin-top: 4em;
+            display: inline-block;
+            float: left;
+        }
+
+        .timer {
+            width: 25em;
+            margin: 1% 1% 1% 10%;
+            display: inline-block;
+        }
+
+        .number {
+            width: 25em;
+            margin: 2% 1%;
+            display: inline-block;
+            float: right;
+        }
+
+        .clockbutton {
+            background-color: #333;
+            height: 30px;
+            width: 30px;
+            border: thin solid #000;
+            padding: 7px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+        }
+
+        div.background {
+            background-color: #FFF;
+            margin-top: 8em;
+         margin-bottom: 25px;
+        }
+
+        div.testimonial {
+            clear: both;
+        }
+
+        div.audio {
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+            background-color: #FFF;
+            padding-top: 1%;
+        }
+
+        .order_content {
+            background: #FFF;
+        }
+
+        #af_form_wrapper {
+            margin: 0 0 1% 0;
+            border-radius: 0;
+        }
+
+        .listright {
+            border: thin solid black;
+            display: inline-block;
+            width: 45%;
+            float: right;
+            margin: 1% 2%;
+            padding: 1%;
+            -webkit-box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+            -moz-box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+            box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+        }
+
+        .listright ul {
+            margin: 1.25em 1em 1.25em 2.5em;
+        }
+
+        .listleft {
+            border: thin solid black;
+            display: inline-block;
+            width: 45%;
+            margin: 1% 2%;
+            padding: 1%;
+            -webkit-box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+            -moz-box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+            box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+        }
+
+        .listleft ul {
+            margin: 1.25em 1em 1.25em 2.5em;
+        }
+
+        .listleft li {
+            margin-top: 2.37em;
+        }
+
+        .list {
+            border: thin solid black;
+            -webkit-box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+            -moz-box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+            box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+            margin: 5% 5%;
+        }
+
+        .center {
+            text-align: center;
+
+
+            font-size: 1.7em;
+            margin:2% 10%;
+            font-weight: bold;
+            font-family: Georgia;
+        }
+        .test {
+                width: 100%;
+                background: #FFF;
+            }
+
+        .header {
+            display: block;
+            width: 80%;
+            margin: 2em auto;
+        }
+
+        .header h4 {
+            text-align: left;
+            float: right;
+            margin-top: 1.5em;
+            margin-left: 0;
+        }
+
+        h1 {
+            margin: 0 auto;
+        }
+
+        .deck {
+            text-align: center;
+            color: #af0a0a;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .indent{
+          padding-left: 25px;
+          padding-right: 25px;
+        }
+        h3.wait{
+          color:red;
+          font-size: 4rem;
+          padding-top: 25px;
+          margin:0px!important;
+        }
+        /*----------FAQ--------*/
+
+        .moveSection {
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+
+        .faqButton {
+            width: 5%;
+            float: left;
+            margin: 1em;
+            margin-top: -1em;
+        }
+
+        .questionSect:hover {
+            cursor: pointer;
+        }
+
+        .moveSection {
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+
+        .answerSect {
+            display: none;
+            margin: 5em;
+            background-color: #ededed;
+            border: thin solid #202e61;
+            -webkit-box-shadow: inset 1px 1px 24px 0px rgba(50, 50, 50, 0.53);
+            -moz-box-shadow: inset 1px 1px 24px 0px rgba(50, 50, 50, 0.53);
+            box-shadow: inset 1px 1px 24px 0px rgba(50, 50, 50, 0.53);
+        }
+
+        .question {
+            margin-left: 2em;
+        }
+
+        .question p {
+            font-size: 2em;
+        }
+
+        .closeButton {
+            color: #fff;
+            width: 15%;
+            font-size: 1.5em;
+            margin: 0 auto;
+            background-color: darkred;
+            cursor: pointer;
+            padding: 1%
+        }
+        @media screen and (max-width:800px) {
+          .logo {
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 4em;
+            margin-bottom: -50px;
+            display: block;
+            float: none;
+          }
+        }
+
+
+        .eyebrow { 
+            padding: 1%;
+background-color: black;
+color: white;
+    font-size: 2.4em;
+         }
+
+         .underlist {
+                font-size: 3em;
+
+         }
+    </style>
+
+
+        
+        <script src="https://images.web-purchases.com/jQuery/jquery.min.js" type="text/javascript"></script>
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+            <title>Zach's Weekly Squawk Box</title>
+</head><body>
+<style type="text/css">
+    .warning-message {
+        position: fixed;
+        top: 0px;
+        left: 10px;
+        margin: 0px;
+        height: 100%;
+        width: 100%;
+        background-color: #ffffff;
+    }
+</style>
+<div id="warning-message" class="warning-message">
+    <noscript>
+        
+<h1>JavaScript must be enabled to complete this purchase. </h1>
+<p>Dear Reader, </p>
+<p>JavaScript must be enabled in order to use this site. </p>
+<p>If you know how to enable JavaScript in your browser, please do so now. </p>
+<p><strong>Please call now, and we can help you right away: 1-888-295-0140</strong>. </p>
+<p>Thank you. </p>  </noscript>
+    <div id="no-cookie" style="display:none">
+
+<h1>Cookies must be enabled to complete this purchase. </h1>
+<p>Dear Reader, </p>
+<p>Cookies must be enabled in order to use this site. </p>
+<p>If you know how to enable Cookies in your browser, please do so now. </p>
+<p>The Help portion of the toolbar on most browsers will tell you how to set your browser to enable cookies. </p>
+<p><strong>Please call now, and we can help you right away: 1-888-295-0140</strong>. </p>
+<p>Thank you. </p>  </div>
+</div>
+<div id='mainContainer' class='container'>
+<!-- dependent name: trackerVars -->
+
+
+    <div class="formwrapper">
+        <div class="top">
+<!-- SFF NF Logo -->
+      
+<!-- SFF NF Logo -->
+        </div>
+        <div class="background">
+
+<div class="eyebrow">
+    <p>EXCLUSIVE for New Members of <em>Zach’s Weekly Squawk Box</em></p> 
+</div>
+          
+
+<h2 style="font-size: 3em;">This Simple Move Could Be Worth Up To…</h2>
+
+<ul class="checkmark underlist">
+    <li><strong>$842,868 this year…</strong></li>
+    <li><strong>$842,868 next year…</strong></li>
+    <li><strong>$842,868 the year after…</strong></li>
+</ul>
+
+<p style="text-align: center; font-size: 3em;"><strong><u>And every year if you choose!</u></strong></p>
+
+<p style="text-align: center; font-size: 3em;"><strong><u>Exclusive for new members of  <br> <em>Zach’s Weekly Squawk Box</em>.</u></strong></p>
+
+
+
+ <p>Dear John Doe,</p>
+
+<p>Thank you for taking the initiative and joining us today.</p>
+<p>In just a few minutes, you’ll receive a confirmation email with everything we’ve promised today.</p>
+<p>But first, I have some HUGE news you need to know about…</p>
+<p>I’m confident that once you see the EXPLOSIVE gains you can make…</p>
+<p>And the true power of the Income Box…</p>
+<p>You’ll want to keep getting this research for the rest of your life.</p>
+<p>So I’d like to make sure you have the opportunity to get LIFETIME access to all my Income Box recommendations.</p>
+<p>That means every trade I recommend in the <em>Zach’s Weekly Squawk Box</em>…</p>
+<p>Not for one year.</p>
+<p>Not for two years.</p>
+<p>But for life.</p>
+<p>Having access for life ensures that you’ll have a chance to collect big retirement paychecks as soon as each window opens…</p>
+<p>You could be pocketing $7,484, $16,408… and even $31,026… from a single trade…</p>
+<p>For the rest of your life. </p>
+<p>We’re calling this upgrade the <em>Zach’s Weekly Squawk Box</em> LIFETIME Upgrade…</p>
+<p>It’s a one-time chance we’re offering to charter members to secure uninterrupted access to all the Income Box plays that I recommend!</p>
+<p>Save thousands in subscription fees…</p>
+<p>And gain access to a number of VIP benefits you can’t get anywhere else.</p>
+<p>Here’s how it works…</p>
+
+<h3>With a Simple Click of Your Mouse, You Can Claim a LIFETIME of Access To <em>Zach’s Weekly Squawk Box</em></h3>
+
+<p>Not just one year’s worth.</p>
+<p>Not five years’ worth.</p>
+<p>But “forever” access…</p>
+<p>That’s right – “forever.”</p>
+<p>In other words, you’ll have a new trade recommendation delivered to your email box…</p>
+<p>A weekly call worth $1,300… </p>
+<p>For as long as you like.</p>
+<p>Like I showed you today, could have turned $5,000 into a retirement paycheck of over $7,484, $16,408… and even $31,026…</p>
+<p>In just days.</p>
+<p>Do that each and every week and you’re looking at the chance for EXTRA income of up to $842,868 per year… with little effort!</p>
+<p>In five years that’s over $4,214,240!</p>
+<p>Can you imagine how having that kind of extra income would change YOUR life?</p>
+<p>And you can do that this year…</p>
+<p>Next year… </p>
+<p>The year after… and every year after that… for as long as you choose.</p>
+<p>Powerful and exciting, isn’t it?</p>
+<p>Knowing you could have full control of your family’s financial future, without ever worrying about money to fund your dream retirement lifestyle?</p>
+<p>Enough money to buy that beach house or sailboat you’ve always dreamed about…</p>
+<p>To take that cruise to the French Riviera…</p>
+<p>Or to pay for a child’s or grandchild’s college education…</p>
+<p>Best of all, because you’re a charter member, I’ve prepared a very special offer for you.</p>
+<p>It’s the lowest priced offer we’ll ever charge for a LIFETIME of this research service.</p>
+<p>And you can get all this with a single click of your mouse.</p>
+<p>No need to enter your credit card information again. </p>
+<p>But that’s not all, because as part of this special one-time offer, you also get…</p>
+ 
+
+<h3>Our “Direct Dial” <br>
+Customer Care Plan</h3>
+
+<p>By enrolling in this lifetime upgrade offer today, you also get instant access to our special “Direct Dial” customer care plan.</p>
+
+<p>What’s involved? For one, you’ll get a special hotline phone number you can call anytime.</p>
+
+<p>The number rings direct to your specific liaison on our customer care team.</p> 
+
+<p>No frustrating, automated menus to navigate through. No mind-numbing elevator-style music to wait through.</p>
+
+<p>Because when you join this program today, we’ll give you the phone number that will serve as your personal lifetime liaison number.</p>
+
+<p>And if you have any questions about your subscription or any of the benefits I’m telling you about today…</p>
+
+<p>You can call them whenever you have any questions… from Monday through Friday between 9 a.m. and 5 p.m. Eastern!</p>
+
+<p>In fact, when you call, you will ring them on a special phone we’ve set up for our LIFETIME subscribers.</p>
+
+<p>This phone rings right on their desk, and since it has a special ring, they answer it before taking any other calls.</p> 
+
+<p>They will do everything they can to make sure your question is answered and your needs are met to your satisfaction.</p>
+
+<p>Keep in mind we can’t give any personal investing advice (by law) over the phone.</p> 
+
+<p>However, if you have a question about your membership, your lifetime liaison will answer it to the best of their ability.</p>
+
+<p>In fact, since you’ll have Upgrade Service Status, it’s very possible I might even address your question in one of my alerts or calls. (Again, by law I can’t respond personally, or give personalized investment advice either.)</p>
+
+<p>We don’t independently advertise or sell this Direct Dial access at any price.</p>
+
+<p>But you’ll get it today, FREE, just by responding to this offer…</p>
+
+<p>It only takes one simple step to receive all of these incredible benefits.</p>
+
+<p>Here’s how…</p>
+
+
+<h3>One Click for a Lifetime of
+42-Day Retirement Windows</h3>
+
+<p>When you join us today with this offer, you can get Zach’s Weekly Squawk Box for the rest of your life…</p>
+
+<p>Without ever paying another individual subscription fee...</p>
+
+<p>Without ever paying a renewal fee...</p>
+
+<p>And without ever worrying about missing the next Retirement Window play.</p>
+
+<p>Plus, you’ll receive the “Direct Dial” access to our customer care team…</p>
+
+<p>How much is access to a lifetime of the best Income Box plays worth to you?</p>
+
+<p>Before you answer, consider this...</p>
+
+<p>With today’s special membership offer, you’ve paid $2,000 for the first year’s subscription.</p>
+
+<p>That means the second year will cost you $2,000.</p>
+
+<p>The third year, $2,000 more… the fourth, $2,000 more.</p> 
+
+<p>And so on.</p>
+
+<p>That means in the next 10 years you’ll be paying a total $20,000.</p>
+
+<p>Even at that price, it’s well worth it...</p> 
+
+<p>Considering how much you could make from these Income Box plays.</p>
+
+<p>If we charged $10,000 for this one-time “lifetime” upgrade, it would already be a bargain.</p>
+
+<p>However, you’re not going to pay anything close to this amount today…</p>
+
+<p>You won’t pay $7,500...</p> 
+
+<p>Or even $5,000 today.</p>
+
+<p>In fact, I think you’ll be surprised just how affordable this lifetime access is.</p>
+
+<p>But first, there’s one more benefit to tell you about. Something you can only claim today as part of this special offer…</p>
+
+
+<h3>It’s Called the Legacy Program</h3>
+
+<p>In essence, this program ensures your heirs will continue to benefit from your <em>Zach’s Weekly Squawk Box</em> LIFETIME upgrade long after you’re gone.</p> 
+
+<p>By subscribing to this upgrade today, you’ll be able to pass your membership down to a family member.</p> 
+
+<p>That way you could keep this subscription going throughout generations of your family, starting with your children, grandchildren or immediate heirs.</p> 
+
+<p>There are no transfer fees or charges of any type for your heirs.</p> 
+
+<p>You’ll not only have the tools to build better wealth, but you could reward your family for generations by acting today.</p> 
+
+<p>Just imagine you and your children and your grandchildren collecting big retirement paychecks in the years ahead…</p> 
+
+<p>With that in mind, I’d like to make this deal a “no-brainer.” </p> 
+
+<p>So today... through this message only... you can join for a tiny fraction of what you’d pay in subscriptions over a lifetime...</p> 
+
+<p>You can join right now for just an extra $1,000.</p> 
+
+<p>Remember, the published price for <em>Zach’s Weekly Squawk Box</em> is $4,000 per year.</p> 
+
+<p>And yet, for today’s special charter offer , you could get a LIFETIME of benefits for our YEARLY PUBLISHING price.</p> 
+
+<p>It’s somewhat ridiculous how cheap we’ve made this.</p> 
+
+<p>Again, this is a one-time payment for a lifetime of access.</p> 
+
+<p>There are no renewal fees. No maintenance fees. No hidden charges.</p> 
+
+<p>It’s simple – you pay this extra $1,000 fee once.</p> 
+
+<p>And you’ll instantly secure a lifetime of my <em>Weekly Squawk Box</em>(normally $4,000 per year!).</p> 
+
+<p>One click and you get my research for life, PLUS every hot Income Box trade alert... the Legacy Program… your “Direct Dial” service… and all the rest…</p> 
+
+<p>We’ve never done anything like this.</p> 
+
+<p>And we may never do it again.</p>
+
+<p>And remember – with the research costs of this system and the Samsung tablet, I simply cannot offer any refunds on this special offer.</p>
+
+<p>To upgrade today, simply click the “YES, UPGRADE MY ACCOUNT” button below.</p>
+
+<p>Once you click, we’ll automatically cancel the fee you just paid…</p>
+
+<p>And instead charge your card a total one-time payment of just $4,000.</p>
+
+<p>Then we’ll send you to a page with your LIFETIME login information, and you’ll be good to go.</p>
+
+<p>It’s that simple.</p>
+
+<p>Alternatively, you can click “NO, I WANT TO FORFEIT MY CHANCE TO UPGRADE” and we’ll simply take you to the regular <em>Zach’s Weekly Squawk Box</em> confirmation page.</p>
+
+<p>The choice is yours.</p>
+
+<p>Thank you again for subscribing.</p>
+
+<p>I look forward to seeing you getting the lifetime of Income Box paychecks you deserve.</p>
+
+<p>Sincerely,</p>
+<img src="https://d13p2xj50zkyqm.cloudfront.net/promos/images/signatures/ZachScheidt.png">
+
+<p>Zach Scheidt <br>
+Editor, <em>Zach's Weekly Squawk Box</em></p>
+
+                        <!-- END Enter Order Upsell / Confirmation Copy Here -->
+
+                        <!-- START Upsell Buttons: Delete this section when copying page to confirmation -->
+
+                    <h3 class="upsell_yes continue">
+            
+
+    <a class="advancedEffortLinkClass" href="#"  >YES, UPGRADE MY ACCOUNT</a>
+
+  
+
+        </h3>
+
+    
+<h3 class="upsell_no">
+            
+
+    <a class="advancedEffortLinkClass" href="#"  >NO, I WANT TO FORFEIT MY CHANCE TO UPGRADE</a>
+
+
+
+        </h3>
+
+
+                        <!-- END Upsell Buttons: Delete this section when copying page to confirmation -->
+                        <h3 class="upsell_alert">(I know that I may never see this offer again.)</h3>
+                        <div class="autorenew">
+                            <p><strong>Billing Terms:</strong> When you sign up for a Lifetime Subscription to <em>Zach’s Weekly Squawk Box</em>, we’ll automatically cancel the fee you just paid. And your credit card will be billed $4,000 immediately. But please note – with the research costs of this system and the Samsung tablet… we simply can't allow any refunds on this new project. If that ruffles your feathers, then this opportunity is not for you. This is a serious offer. With the potential to make you a serious fortune in lightning-fast speed… for as long as you choose. It’s for serious readers only.</p>
+                        </div>
+            <!--====  End Body Section  ====-->
+
+
+      <div class="clear" style="padding-bottom:1%;"></div>
+    </div>
+    <script>
+    var imprint = 'SPR';
+    </script>
+
+</div></body></html>
