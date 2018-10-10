@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+
+
+<html><head>
+<meta http-equiv="PRAGMA" content="NO-CACHE" />
+<meta http-equiv="CACHE-CONTROL" content="NO-CACHE" />
+<meta http-equiv="EXPIRES" content="NOW" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<link rel="stylesheet" type="text/css" href="https://d13p2xj50zkyqm.cloudfront.net/promos_1/LF/ALR/OF_TEST/ALR-test.css">
+
+<script src="https://images.web-purchases.com/jQuery/jquery.min.js" type="text/javascript"></script>
+
+<style>
+body{
+  background-color:#CCCCCC;
+}
+.header{
+    margin-bottom: 15px;
+}
+a{
+  color: #000;
+  margin: 0px;
+}
+.number{
+  color: #000;
+  font-size: 21px;
+  margin: 20px 10px;
+  text-align: inherit;
+  font-weight: bold;
+  line-height: 15px;
+}
+.order-by{
+  font-size: 12px;
+  font-weight: normal;
+  text-align: left;
+}
+.timer{
+  margin-top: 30px;
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0px;
+  padding: 5px;
+}
+.logo{
+  margin-bottom: 0px;
+}
+.timer p{
+  font-size: 14px;
+  text-align:left;
+  margin: 0px;
+  font-weight: normal;
+}
+h1{
+  margin-top:15px;
+  font-family: Arial;
+  font-size:30px;
+  font-weight: bold;
+  line-height: 45px;
+}
+h2, h3, h4{
+  font-family: Arial;
+  font-weight: bold;
+}
+.guarantee{
+  border: 5px solid #38ACEC;
+  max-width: 80%;
+  margin: 10px auto;
+}
+.guarantee span{
+  color: #38ACEC;
+}
+.guarantee h3{
+  margin: 25px;
+}
+div.af_form_wrapper .security_stamp {
+    margin: 2em auto;
+}
+.security_stamp {
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+}
+.min, .sec{
+  font-weight: bold;
+}
+div.af_form_wrapper h2.form_headline {
+    border-top: none;
+    margin: 2em 1em 1em;
+    padding-top: .5em;
+}
+.form_headline{
+  text-align: left;
+  border-top: none;
+    color: #000;
+    border-bottom: 1px solid #061c0c;
+    font-size: 25px;
+    padding:10px;
+}
+div.af_form_wrapper h3.choiceName {
+    color: #000;
+    font-size: 1.9em;
+    text-align: left;
+    margin-top: 1.667em;
+}
+
+div.af_form_wrapper div.field_wrapper {
+    margin: .1em auto;
+    width: 50%;
+    min-width: 40em;
+}
+div.af_form_wrapper div.field_input {
+    position: relative;
+    height: inherit;
+    width: 50%;
+}
+select {
+    width: 85%;
+    border-radius: none;
+}
+
+select, textarea {
+    border-radius: 0px;
+}
+.continue {
+    font-size: 18px;
+    font-weight: bold;
+  padding-bottom:10px;
+    padding-top:10px;
+  padding-left:40px;
+  padding-right:40px;
+    border-radius: 7px;
+    background: #ffe2bf;
+    color: #000000;
+    background-image: -webkit-linear-gradient(top, #ffe2bf, #ff9201);
+    background-image: -moz-linear-gradient(top, #ffe2bf, #ff9201);
+    background-image: -ms-linear-gradient(top, #ffe2bf, #ff9201);
+    background-image: -o-linear-gradient(top, #ffe2bf, #ff9201);
+    background-image: linear-gradient(to bottom, #ffe2bf, #ff9201);
+    border: solid #ff9201 1px;
+}
+.continue {
+    background: #ff9201;
+    background: linear-gradient(180deg,#ffe2bf 1%,#ff9201);
+    border: 2px solid #eb7e01;
+    border-radius: 1em;
+    display: block;
+    font-size: 2em;
+    padding: .1em .5em;
+    border-radius: none;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.continue {
+    font-size: 2em;
+    line-height: 1.5em;
+    margin: 1em auto;
+    padding: .5em;
+}
+.BPDate{
+  display: none;
+}
+@media (min-width:100px) and (max-width:680px){
+  .header{
+    background: #061c0c;
+    text-align: center;
+  }
+  .number{
+    color: #fff;
+    font-size: 25px;
+    margin: 20px 10px;
+    text-align: inherit;
+    font-weight: bold;
+    line-height: 20px;
+    text-align: center;
+    padding-bottom:9%;
+  }
+  .order-by{
+    font-size: 16px;
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+  }
+  a{
+    color: #fff;
+    margin: 0px;
+  }
+  h1{
+    font-size:20px;
+    margin: 0px;
+    line-height: 32px;
+  }
+  h2, h3, h4{
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 21px;
+  }
+  .form_headline{
+    border-top: none;
+      border-bottom: 1px solid #061c0c;
+      font-size: 20px;
+      padding:10px;
+  }
+  ol, ul {
+    font-size: 1.6em;
+    margin: .55em 3.25em 2.25em 4em;
+}
+.guarantee .image_left{
+    display: none;
+  }
+  .timer{
+    display: none;
+  }
+  div.af_form_wrapper div.field_wrapper {
+      margin: 1em auto;
+      width: 40%;
+      min-width: 35em;
+  }
+  div.af_form_wrapper div.field_name {
+      text-align: left;
+      height: inherit;
+      width: 40%;
+  }
+  div.af_form_wrapper span.field_text {
+    font-size: 1.3em;
+font-weight:bold;
+    height: inherit;
+    line-height: 1.8em;
+    }
+    .required{
+        margin:-5px 2px 2px 2px;
+    }
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  select:focus,
+  textarea:focus,
+  input:focus {
+    font-size: 16px;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  select,
+  textarea,
+  input {
+    font-size: 16px;
+  }
+}
+
+
+ .clickh {
+      text-decoration: underline;
+      color: #485C6C;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 2em;
+    }
+
+
+/*----------============= FAQ  =============--------*/
+
+
+
+        .faq{
+            cursor:pointer;
+            padding-top: 1em;
+            padding-bottom: 1em;
+                        
+        }
+        .faq--centertext{
+          font-size: 2em; 
+          text-align: center
+        }
+        .faq__questionSect {
+          font-weight: bold;
+          padding-bottom: 1em;
+          text-align: left;
+        }
+
+        .faq__button{
+            width:5%;
+            float:left;
+            margin:1em;
+            margin-top: -1em;
+            max-height: 50px;
+        }
+        .faq__answerSect{
+            font-weight: 400;
+            display:none;
+            margin: 5em;
+            padding: 1rem;
+            -webkit-box-shadow: inset 1px 1px 24px 0px rgba(50, 50, 50, 0.53);
+            -moz-box-shadow:    inset 1px 1px 24px 0px rgba(50, 50, 50, 0.53);
+            box-shadow:         inset 1px 1px 24px 0px rgba(50, 50, 50, 0.53);
+            text-align: left;
+        }
+
+
+/*----------============= / FAQ  =============--------*/
+  .orderbox{
+margin:1em 1%;
+text-align:left;
+}
+
+.innercallout p{
+    font-size: 1.2rem;
+    text-align: center;
+    padding:1%;
+    background-color: #fff;
+    color:#000;
+     margin:0;
+}
+
+label[for=buy]{
+font-size:1.2rem;
+font-weight:bold;
+padding:10px;
+cursor:pointer;
+}
+
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1.1); /* IE */
+  -moz-transform: scale(1.1); /* FF */
+  -webkit-transform: scale(1.1); /* Safari and Chrome */
+  -o-transform: scale(1.1); /* Opera */
+}
+
+.labelwrapper{
+margin: 1em auto;
+}
+
+
+
+.innerboxoffer{
+    padding:2%;
+}
+
+.BumpYes {display: none;}
+
+</style>
+<script>
+var imprint = "SPR";
+</script>
+
+
+<title>Lifetime Income Report</title>
+
+</head>
+<body>
+
+
+
+<div id='mainContainer' class='container'>
+ 
+
+
+  <div  class="contentwrapper" style="border-radius: 0px; margin-top:-25px">
+
+
+<img src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/LIR/LIR_Congressional_full/LIR_CongressionalChecks_OFMasthead.jpg" class="image_center">
+
+<div class="row columns small-12">
+
+<div class="row">
+  
+
+<p>Congratulations for gaining access to this page.</p>
+<p>You’re just moments away from claiming a FREE copy of my new book <strong>Congress’ Secret $1.17 Trillion Give Away.</strong></p>
+
+<div class="columns medium-9">
+  <p>This book will NOT be available on Amazon.com or in any other bookstore. You can only get it right here, through this special offer.</p>
+  <p>We only have 995 copies to give away today. This deal is valid while supplies last.</p>
+  <p>We’re also going to send you three bonus reports right now.</p>
+  <p>With all that information, you’ll be able to set yourself with multiple streams of income that could last you for the rest of your life.</p>
+</div>
+
+<div class="columns medium-3">
+    <img src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/LIR/LIR_Congressional_full/CongressSecret_3DCover-Altview.png" class="image_center">
+  </div>
+
+<p>You can keep everything, no matter what. All we ask in return is that you take a RISK-FREE trial of our groundbreaking research, called <strong><em>Lifetime Income Report</em></strong>.</p>
+<p>Just to recap, here’s everything you get once you begin your no-risk trial subscription:</p>
+
+
+<ul class="checkmark">
+	<li>MEMBERSHIP BENEFIT #1 — FREE Copy of My Brand-New Book <strong>Congress’ Secret $1.17 Trillion Giveaway.</strong> With the information inside this book, you’ll have the chance to collect up to 40 Congressional Checks every year… checks that go anywhere from $939 to as high as $6,235 or more. (a $39 value)</li>
+
+	<li>MEMBERSHIP BENEFIT #2 — <strong>The Secret Transaction That Could Generate HUNDREDS (or More) in INSTANT INCOME Week After Week</strong>. Find out how you can collect $1,000s every week with a revolutionary financial instrument. … and do it over and over again. (a $29 value)</li>
+
+	<li>MEMBERSHIP BENEFIT #3 — <strong>The Little Booklet of Retirement Freebies.</strong> Inside, you’ll discover 50 ways to get almost anything you want in life for pennies on the dollar! (a $29 value)</li>
+
+	<li>MEMBERSHIP BENEFIT #4 — <strong>12 Full Issues of My Monthly Research Advisory.</strong> For an entire year, you’ll receive my popular Lifetime Income Report monthly research newsletter. It includes at least one new income-gushing recommendation each and every month (published price value of $99)</li>
+
+	<li>MEMBERSHIP BENEFIT #5 — <strong>Special “Members Only” Email Updates.</strong> Wondering what to buy, sell or hold? As a member, you’ll receive updates every single week on every important piece of news relating to the markets and any of the stocks I may recommend in the Lifetime Income Report members-only model portfolio (a $99 value)</li>
+
+	<li>MEMBERSHIP BENEFIT #6 — <strong>Access to the Lifetime Income Report Support Team.</strong> As a new member of Lifetime Income Report, you’ll receive complete access to my support team, which can be reached by phone or email between the hours of 9 a.m. and 5 p.m. EST, Monday through Friday (a $99 value).</li>
+</ul>
+<p>All told, that’s more than $394 worth of value.</p>
+
+<p>However, right now, you can get an entire year’s worth of my best income-generating research for as little as $49.</p>
+
+<p>A small price to pay when you consider that your first Congressional Check alone could pay you $939, $6,235 and even $21,538.</p>
+
+<p>And with my guarantee, you really have nothing to lose…. Because you’ll have the entire year to review my work at no risk.</p>
+
+<p>Everything you get today is yours to keep forever no matter what.</p>
+
+<p>So there’s no risk to you.</p>
+
+  <div class="bluebox" style="overflow:hidden;"> <!-- Satisfaction Box-->
+
+    <h4 style="text-align: center;">We want you to be <span class="blue">100% Satisfied</span> with your <br class="hidebr"/><strong><em>Lifetime Income Report</em></strong> Subscription.</h4><br> <p style="margin-top:-1em;">It's important to know that your subscription is backed by my unique complete SATISFACTION GUARANTEE. This means that I personally pledge you'll never find better ways to safely maximize your income. If you decide I'm wrong, simply cancel at any time during the next year and we’ll return 100% of your subscription fee. It's that simple. You don't even need to give me a reason.</p>
+  </div> 
+
+</div>
+
+    <div id="af_form_wrapper" class="af_form_wrapper" style="max-width:700px; margin-right:auto; margin-left:auto">
+
+
+        <form method="post">
+
+
+<h2 class="form_headline" id="sign">Please Choose Your Subscription Level:</h2>
+
+<!-- !!!!** Remove Old Opium Choices and put in new Below **!!!! -->
+
+                      <input id="__selectedOfferPricingOptionId__" name="formComponentsMap['offer'].pricingOptionId" type="hidden" value="" />
+
+
+                  <div class="row">
+                    <div class="columns medium-3">
+                      <img src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/LIR/LIR_Congressional_full/Checks-Starburst.png" class="image_center">
+                    </div>
+                    <div class="columns medium-9">
+                      
+
+
+
+
+
+
+                  <div class="BumpNo">
+
+                          <div  class="choice">
+                          <label>
+                              <div align="left">
+                                  <h3 class="choiceName">
+                          <input type="radio" name="formComponentsMap['offer'].choiceId" checked="checked" value="4753400" id="Plat"
+                              data-bind="checked: selectedOfferChoiceId" />
+
+
+                                              BEST DEAL: <span class="red"><del>$299</del></span> Only $79 for a digital-download <span class="red">PLUS</span> print subscription for a FULL year of <em>Lifetime Income Report</em>...<span class="red">PLUS</span> EXTRA BONUSES!
+
+                                  </h3>
+                                  <div class="hidethis">
+                                  <p class="choiceDescription">
+                                              1year $79AR cpt055
+
+                                  </p>
+                          
+                                      <p class="autorenewMessage">
+                                          <strong>The Term</strong> is
+                                          <strong><span>    12
+                  </span> <span>months</span></strong>.
+                                      </p>
+                                  
+                          
+                          
+                      
+
+
+                          <!-- Quantity box -->
+
+                    
+                       
+                          <!-- End Quantity box -->
+
+                          <!-- Shipping Options ----------------------------------------------------------------- -->
+
+
+
+                          <!-- End Shipping Options ----------------------------------------------------------------- -->
+
+                                  </div>
+                              </div>
+                          </label>
+                          </div>
+                  </div>
+                  <div class="BumpYes">
+
+                          <div  class="choice">
+                          <label>
+                              <div align="left">
+                                  <h3 class="choiceName">
+                          <input type="radio" name="formComponentsMap['offer'].choiceId" value="4753397" id="PlatBump"
+                              data-bind="checked: selectedOfferChoiceId" />
+
+                                              BEST DEAL: <span class="red"><del>$299</del></span> Only $89 for a digital-download <span class="red">PLUS</span> print subscription for a FULL year of <em>Lifetime Income Report</em>...<span class="red">PLUS</span> Audio Book
+
+                                  </h3>
+                                  <div class="hidethis">
+                                  <p class="choiceDescription">
+                                              1year $89 NO AR cpt055 (BUMP)
+
+                                  </p>
+                          
+                                      <p class="autorenewMessage">
+                                          <strong>The Term</strong> is
+                                          <strong><span>    12
+                  </span> <span>months</span></strong>.
+                                      </p>
+                                  
+                          
+                          
+                      
+
+                          <!-- Quantity box -->
+
+                    
+                       
+                          <!-- End Quantity box -->
+
+                          <!-- Shipping Options ----------------------------------------------------------------- -->
+
+
+
+                          <!-- End Shipping Options ----------------------------------------------------------------- -->
+
+                                  </div>
+                              </div>
+                          </label>
+                          </div>
+                  </div>
+                     </div>
+
+
+                  </div>
+                  <img src="https://research.dailyreckoning.com/wp-content/uploads/2018/06/LIR_CongressionalChecks_Famshot.png" class="image_center">
+                  <hr>
+                  <div class="BumpNo">
+
+                          <div  class="choice">
+                          <label>
+                              <div align="left">
+                                  <h3 class="choiceName">
+                          <input type="radio" name="formComponentsMap['offer'].choiceId" value="4753406" id="Gold"
+                              data-bind="checked: selectedOfferChoiceId"  />
+
+                                              PREMIUM SUBSCRIPTION: $129 for a digital-download PLUS print subscription year of <em>Lifetime Income Report</em>
+
+                                  </h3>
+                                  <div class="hidethis">
+                                  <p class="choiceDescription">
+                                              1year $129AR cpt055
+
+                                  </p>
+                          
+                                      <p class="autorenewMessage">
+                                          <strong>The Term</strong> is
+                                          <strong><span>    12
+                  </span> <span>months</span></strong>.
+                                      </p>
+                                  
+                          
+                          
+
+
+                                  </div>
+                              </div>
+                          </label>
+                          </div>
+                  </div>
+
+                  <div class="BumpYes">
+
+                          <div  class="choice">
+                          <label>
+                              <div align="left">
+                                  <h3 class="choiceName">
+                          <input type="radio" name="formComponentsMap['offer'].choiceId" value="4753403" id="GoldBump"
+                              data-bind="checked: selectedOfferChoiceId" />
+
+                                              PREMIUM SUBSCRIPTION: $139 for a digital-download PLUS print subscription year of <em>Lifetime Income Report</em> <span class="red">PLUS</span> Audio Book
+
+                                  </h3>
+                                  <div class="hidethis">
+                                  <p class="choiceDescription">
+                                              1year $138.99 AR w/Bump
+
+                                  </p>
+                          
+                                      <p class="autorenewMessage">
+                                          <strong>The Term</strong> is
+                                          <strong><span>    12
+                  </span> <span>months</span></strong>.
+                                      </p>
+                                  
+                          
+                          
+
+                                  </div>
+                              </div>
+                          </label>
+                          </div>
+                  </div>
+
+
+                  <hr>
+
+                  <div class="BumpNo">
+
+                          <div  class="choice">
+                          <label>
+                              <div align="left">
+                                  <h3 class="choiceName">
+                          <input type="radio" name="formComponentsMap['offer'].choiceId" value="4753401" id="Silv"
+                              data-bind="checked: selectedOfferChoiceId"  />
+
+                                              BASIC DIGITAL-ONLY SUBSCRIPTION: $49 for a digital-download year of <em>Lifetime Income Report</em>
+
+                                  </h3>
+                                  <div class="hidethis">
+                                  <p class="choiceDescription">
+                                              1 Year for $49
+
+                                  </p>
+                          
+                                      <p class="autorenewMessage">
+                                          <strong>The Term</strong> is
+                                          <strong><span>    12
+                  </span> <span>months</span></strong>.
+                                      </p>
+                                  
+                          
+                          
+                      
+
+                                  </div>
+                              </div>
+                          </label>
+                          </div>
+                  </div>
+                  <div class="BumpYes">
+
+                          <div  class="choice">
+                          <label>
+                              <div align="left">
+                                  <h3 class="choiceName">
+                          <input type="radio" name="formComponentsMap['offer'].choiceId" value="4753398" id="SilvBump"
+                              data-bind="checked: selectedOfferChoiceId" />
+
+                                              BASIC DIGITAL-ONLY SUBSCRIPTION: $59 for a digital-download year of <em>Lifetime Income Report</em><span class="red">PLUS</span> Audio Book 
+
+                                  </h3>
+                                  <div class="hidethis">
+                                  <p class="choiceDescription">
+                                              1year $59 NO AR cpt055
+
+                                  </p>
+                          
+                                      <p class="autorenewMessage">
+                                          <strong>The Term</strong> is
+                                          <strong><span>    12
+                  </span> <span>months</span></strong>.
+                                      </p>
+                                  
+                          
+                          
+                                  </div>
+                              </div>
+                          </label>
+                          </div>
+                  </div>
+                      
+
+<!-- !!!!** Remove Old Opium Choices and put in new Above !!!!** -->
+     
+
+	
+<!-- Billing Terms -->
+  <hr>
+  <div style="padding:0; margin:0; text-align:left;">
+    <p><strong>Billing Terms:</strong> Once you accept your <em>Lifetime Income Report</em> subscription, your credit card will be billed immediately. Then, when your subscription is about to expire, we will automatically bill your card for another term at the same rate.</p> 
+    <p>This “auto-renew” feature does not obligate you in any way. What’s more, we’ll give you 30 days after your “auto-renew” charge to receive that year's subscription fee back in full.</p>
+     
+    <p>*International customers will receive an electronic subscription only.</p>
+     
+    <p>For further service please call our customer service in Baltimore, MD at <strong>1-855-638-5892</strong> 9AM to 5PM EDT, Monday-Friday.</p>
+  </div>
+<!-- / Biling Terms -->
+    
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="form_headline">Tell Us About Yourself:</h2>
+
+
+<!-- !!!!** Insert New Order Form Part 1/2 !!!!** -->
+
+  <h3>!!!!** Add Part of Order Form Here !!!!**</h3>
+
+
+<!-- !!!!** / Insert New Order Form Part 1/2 !!!!** -->
+
+    
+
+
+<!-- Bump Offer Here -->
+          <h2 class="form_headline" style="text-align:center;">GUARANTEE That You’ll Finish The Book:</h2>
+
+          <div class="orderbox">
+            <div class="outeredge">
+              <div class="innerboxoffer">
+                <img src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/LIR/LIR_Cogressional-Checks_0318/CongressSecret_Cover-Audio-Sq.png" alt="video" class="image_center"  width="50%" />
+                <center class="labelwrapper">
+                    <img src="https://d13p2xj50zkyqm.cloudfront.net/promos/LF/SPY/SealTorch2000_1116/Arrow.gif" width="25px;"><input id="bumpbox" type="checkbox" value="first_checkbox" /><label for="buy" id="buy" class="red bClick">Yes, Add Audiobook…</label>
+                </center>   
+                <p>I want to make this as easy as possible for you. And I want you to learn these secrets while driving to work, cooking dinner, or cleaning the house. Click the box below to add the AUDIOBOOK for only $9.99 extra.  It’s a little over 3 hours… And will allow you to finish <strong><em>Congress’ Secret $1.17 Trillion Give Away</em></strong> by TONIGHT, if you wanted. Check the box above to add to your order. </p>
+              </div>
+            </div>
+          </div>
+<!-- / Bump Offer Here -->
+
+
+
+<!-- !!!!** Insert New Order Form   Part 2/2 !!!!** -->
+
+<h3>!!!!** Add Credit Card Inputs Here !!!!**</h3>
+
+<!-- !!!!** / Insert New Order Form   Part 2/2 !!!!** -->
+
+
+
+
+
+    </div>
+
+        <p class="clickh" style="text-align:center;">
+            <u>Click Here to Get Started Today</u>
+        </p>
+        <img src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/LIR/LIR_Congressional_full/LIR_Congressional_Testimonials-2.jpg" class="image_center">
+        <p class="clickh" style="text-align:center;">
+            <u>Click Here to Get Started Today</u>
+        </p> 
+</div>
+</div>
+<div class="clear"></div>
+  <div class="test">
+
+
+</div>
+
+
+
+</div>
+
+
+
+<script>
+$('.BumpYes').hide();
+
+$('#bumpbox').click(function(){
+  console.log('hey');
+
+if($(this).is(':checked') && $('#Plat').is(':checked')) {
+  console.log('y');
+    $('.BumpYes').show();
+    $('input:radio[id="PlatBump"]').prop('checked', true).click();
+    $('.BumpNo').hide();
+ } 
+
+   
+else if($(this).not(':checked') && $('#PlatBump').is(':checked')) {
+    $('.BumpNo').show();
+        $('input:radio[id="Plat"]').prop('checked', true).click();
+        $('.BumpYes').hide();
+    } 
+    /*
+else if($(this).not(':checked') && $('#Gold').is(':checked')) {
+    $('.BumpNo').show();
+        $('input:radio[id="GoldBump"]').prop('checked', true).click();
+        $('.BumpYes').hide();
+    }
+else if($(this).not(':checked') && $('#GoldBump').is(':checked')) {
+    $('.BumpNo').show();
+        $('input:radio[id="Gold"]').prop('checked', true).click();
+        $('.BumpYes').hide();
+    }
+
+else if($(this).not(':checked') && $('#Silv').is(':checked')) {
+    $('.BumpNo').show();
+        $('input:radio[id="SilvBump"]').prop('checked', true).click();
+        $('.BumpYes').hide();
+    }
+
+else if($(this).not(':checked') && $('#SilvBump').is(':checked')) {
+    $('.BumpNo').show();
+        $('input:radio[id="Silv"]').prop('checked', true).click();
+        $('.BumpYes').hide();
+    }    
+    */
+});
+</script>
+        <script>
+$('.clickh').click(function(){
+$('html, body').animate({
+        scrollTop: $("#sign").offset().top
+    }, 1000);
+ 
+    });
+</script>
+
+
+</div></body></html>
